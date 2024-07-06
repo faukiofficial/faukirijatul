@@ -3,6 +3,7 @@ import { FaBars } from "react-icons/fa";
 import { RiCloseFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import logo from "../assets/logofauki.svg"
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -45,8 +46,8 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <Link to="/" className="text-2xl font-bold text-white hover:text-blue-400">
-              FaukiRijatul
+            <Link to="/" className="text-2xl font-bold text-white flex items-center">
+              <img src={logo} alt="faukirijatul" className="w-7 mr-2" /> <span>FaukiRijatul</span>
             </Link>
           </div>
           <div className="hidden md:block">
