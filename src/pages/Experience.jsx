@@ -14,7 +14,7 @@ const Experience = () => {
     <>
       <Navbar />
       <div className="bg-[#dedede]">
-        <h1 className="text-4xl font-bold text-center text-gray-900 mb-8 pt-10">Experience</h1>
+        <h1 className="text-4xl font-bold text-center text-gray-900 mb-8 pt-10">Experiences</h1>
         <VerticalTimeline>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"

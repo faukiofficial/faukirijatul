@@ -103,7 +103,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className={`${isMenuOpen ? "block" : "hidden"} md:hidden`}>
+      <div className={`${isMenuOpen ? "block" : "hidden"} md:hidden absolute bg-gray-900 w-full`}>
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <HashLink
             to="/#project"

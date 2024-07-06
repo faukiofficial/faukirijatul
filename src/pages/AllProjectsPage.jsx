@@ -26,9 +26,9 @@ const AllProjectsPage = () => {
   return (
     <>
       <Navbar />
-      <section id="all-projects" className="py-8 bg-gray-300 min-h-[86vh]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
-          <h3 className="text-4xl font-bold text-center text-gray-900 mb-8 uppercase">
+      <section id="all-projects" className="pt-10 pb-6 bg-[#dedede] min-h-[86vh]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h3 className="text-4xl font-bold text-center text-gray-900 mb-8">
             All Projects
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
