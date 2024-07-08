@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { FaBars } from "react-icons/fa";
 import { RiCloseFill } from "react-icons/ri";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import logo from "../assets/logofauki.svg"
 
@@ -46,9 +46,9 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <Link to="/" className="text-2xl font-bold text-white flex items-center">
+            <a href="/" className="text-2xl font-bold text-white flex items-center">
               <img src={logo} alt="faukirijatul" className="w-7 mr-2" /> <span>FaukiRijatul</span>
-            </Link>
+            </a>
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
@@ -65,13 +65,13 @@ const Navbar = () => {
                 </HashLink>
                 {isProjectDropdownOpen && (
                   <div className="absolute left-0 mt-1 w-[9rem] shadow-lg overflow-hidden">
-                    <Link
-                      to="/all-projects"
+                    <a
+                      href="/all-projects"
                       className="block px-4 py-2 bg-gray-900 hover:text-blue-400 transition-colors duration-200"
                       onClick={closeDropdowns}
                     >
                       All Projects
-                    </Link>
+                    </a>
                   </div>
                 )}
               </div>
@@ -81,12 +81,12 @@ const Navbar = () => {
               >
                 About
               </HashLink>
-              <Link
-                to="/experience"
+              <a
+                href="/experience"
                 className="hover:text-blue-400 transition-colors duration-200 px-3 py-2 rounded-md text-xl font-medium"
               >
                 Experiences
-              </Link>
+              </a>
             </div>
           </div>
           <div className="-mr-2 flex md:hidden">
@@ -118,12 +118,12 @@ const Navbar = () => {
           >
             About
           </HashLink>
-          <Link
-            to="/experience"
+          <a
+            href="/experience"
             className="block px-3 py-2 rounded-md text-base font-medium hover:text-blue-400 transition-colors duration-200"
           >
             Experiences
-          </Link>
+          </a>
         </div>
       </div>
     </nav>

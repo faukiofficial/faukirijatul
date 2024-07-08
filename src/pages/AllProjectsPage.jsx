@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import projectList from "../data/DataProject";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -34,8 +34,8 @@ const AllProjectsPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {currentProjects.map((item) => (
               <div className="item" key={item.id}>
-                <Link
-                  to={`/project/${item.id}`}
+                <a
+                  href={`/project/${item.id}`}
                   className="block border rounded-md overflow-hidden hover:shadow-2xl relative group"
                 >
                   <img className="w-full" src={item.image} alt={item.title} />
@@ -44,7 +44,7 @@ const AllProjectsPage = () => {
                       {item.title}
                     </h3>
                   </div>
-                </Link>
+                </a>
               </div>
             ))}
           </div>

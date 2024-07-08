@@ -63,7 +63,7 @@ const DetailProject = () => {
           <div className="relative-container relative flex items-center justify-center">
             <button
               onClick={handlePrevClick}
-              className={`bg-slate-200 absolute left-[10px] md:text-4xl text-2xl p-3 rounded-full transition-transform duration-200 z-50 ${
+              className={`bg-slate-200 absolute left-[10px] md:text-4xl text-2xl p-3 rounded-full transition-transform duration-200 z-30 ${
                 currentIndex === 0 ? "text-gray-400 cursor-not-allowed" : "text-blue-400 hover:text-gray-900 hover:scale-110"
               }`}
               disabled={currentIndex === 0}

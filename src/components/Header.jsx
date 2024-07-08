@@ -2,7 +2,7 @@ import profilePicture from "../assets/profile.jpg";
 import { FaInstagram, FaWhatsapp, FaTwitter, FaGithub } from "react-icons/fa";
 import { FiFacebook } from "react-icons/fi";
 import { SlSocialLinkedin } from "react-icons/sl";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -35,7 +35,7 @@ const Header = () => {
           </div>
           <div className="mt-10 flex justify-center gap-5">
             <button className="py-1 w-40 text-xl bg-white text-gray-900 font-bold rounded-md hover:text-blue-400"><a href="#">Resume</a></button>
-            <Link to="/experience" className="py-1 w-40 text-xl bg-white text-gray-900 font-bold rounded-md hover:text-blue-400 block md:hidden">Experiences</Link>
+            <a href="/experience" className="py-1 w-40 text-xl bg-white text-gray-900 font-bold rounded-md hover:text-blue-400 block md:hidden">Experiences</a>
           </div>
         </div>
       </div>
