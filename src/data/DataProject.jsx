@@ -1,14 +1,9 @@
 import {
   FaCss3Alt,
-  // FaBootstrap,
-  // FaReact,
-  // FaNode,
-  // FaVuejs,
-  // FaGithub,
+  FaReact,
 } from "react-icons/fa";
 import { DiJavascript } from "react-icons/di";
-// import { RiTailwindCssFill } from "react-icons/ri";
-// import { SiExpress, SiMysql, SiMongodb } from "react-icons/si";
+import { RiTailwindCssFill } from "react-icons/ri";
 import { FaHtml5 } from "react-icons/fa";
 
 import project1Image from "../assets/faukirijatul.svg";
@@ -32,9 +27,11 @@ const projectList = [
     linkDemo: "https://faukirijatul.vercel.app/",
     linkGithub: "https://github.com/faukiofficial/faukirijatul.git",
     tool: [
-      <FaHtml5 key="html" className="inline-block text-[#E34F26] w-12 h-auto m-2" />,
-      <FaCss3Alt key="css" className="inline-block text-[#1572B6] w-12 h-auto m-2" />,
-      <DiJavascript key="javascript" className="inline-block text-[#F7DF1E] w-12 h-auto m-2" />,
+      <FaHtml5 key="html" className="inline-block text-[#E34F26] w-12 h-auto m-2" title="HTML" />,
+      <FaCss3Alt key="css" className="inline-block text-[#1572B6] w-12 h-auto m-2" title="CSS" />,
+      <DiJavascript key="javascript" className="inline-block text-[#F7DF1E] w-12 h-auto m-2" title="JavaScript"/>,
+      <RiTailwindCssFill key="tailwindcss" className="inline-block text-[#38B2AC] w-12 h-auto m-3" title="Tailwind CSS"/>,
+      <FaReact key="reactjs" className="inline-block text-[#61DAFB] w-12 h-auto m-3" title="ReactJS"/>
     ],
   },
   {
