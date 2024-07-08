@@ -11,7 +11,7 @@ import { DiJavascript } from "react-icons/di";
 // import { SiExpress, SiMysql, SiMongodb } from "react-icons/si";
 import { FaHtml5 } from "react-icons/fa";
 
-import project1Image from "../assets/Project1.svg";
+import project1Image from "../assets/faukirijatul.svg";
 import project2Image from "../assets/Project2.svg";
 import project3Image from "../assets/Project3.svg";
 import project4Image from "../assets/Project4.svg";
@@ -27,10 +27,10 @@ import project12Image from "../assets/Project12.svg";
 const projectList = [
   {
     id: "1",
-    title: "New Project Will Be Added 1",
+    title: "Fauki Rijatul Personal Web",
     image: project1Image,
-    linkDemo: "https://web.facebook.com/faukiofficial?_rdc=1&_rdr",
-    linkGithub: "https://web.facebook.com/faukiofficial?_rdc=1&_rdr",
+    linkDemo: "https://faukirijatul.vercel.app/",
+    linkGithub: "https://github.com/faukiofficial/faukirijatul.git",
     tool: [
       <FaHtml5 key="html" className="inline-block text-[#E34F26] w-12 h-auto m-2" />,
       <FaCss3Alt key="css" className="inline-block text-[#1572B6] w-12 h-auto m-2" />,

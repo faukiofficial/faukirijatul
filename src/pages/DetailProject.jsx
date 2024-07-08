@@ -73,7 +73,7 @@ const DetailProject = () => {
             <img
               src={data.image}
               alt={data.title}
-              className={`w-full rounded-lg mb-4 relative ${transitionClass}`}
+              className={`w-full h-[32rem] rounded-lg mb-4 relative ${transitionClass}`}
             />
             
             <button

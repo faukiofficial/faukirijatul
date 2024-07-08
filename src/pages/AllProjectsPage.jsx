@@ -36,9 +36,9 @@ const AllProjectsPage = () => {
               <div className="item" key={item.id}>
                 <a
                   href={`/project/${item.id}`}
-                  className="block border rounded-md overflow-hidden hover:shadow-2xl relative group"
+                  className="block border rounded-md overflow-hidden hover:shadow-2xl relative group w-full h-full"
                 >
-                  <img className="w-full" src={item.image} alt={item.title} />
+                  <img className=" w-full h-full" src={item.image} alt={item.title} />
                   <div className="absolute inset-0 bg-gray-900 bg-opacity-0 group-hover:bg-opacity-70 flex items-center justify-center transition-opacity duration-300">
                     <h3 className="text-white text-lg opacity-0 group-hover:opacity-100">
                       {item.title}
