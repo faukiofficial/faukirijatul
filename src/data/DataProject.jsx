@@ -60,8 +60,8 @@ const projectList = [
     id: "3",
     title: "Simple CRUDS App",
     image: project3Image,
-    linkDemo: "https://github.com/faukiofficial/tugas-api-express-mongo.git",
-    linkGithub: "https://tugas-api-express-mongo.onrender.com/",
+    linkDemo: "https://tugas-api-express-mongo.onrender.com/",
+    linkGithub: "https://github.com/faukiofficial/tugas-api-express-mongo.git",
     tool: [
       <FaHtml5 key="html" className="inline-block text-[#E34F26] w-12 h-auto m-2" title="HTML" />,
       <DiJavascript key="javascript" className="inline-block text-[#F7DF1E] w-12 h-auto m-2" title="JavaScript"/>,
