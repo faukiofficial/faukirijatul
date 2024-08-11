@@ -7,7 +7,7 @@ import { DiJavascript } from "react-icons/di";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaHtml5 } from "react-icons/fa";
 import { TbBrandVite } from "react-icons/tb";
-import { SiExpress, SiMysql, SiMongodb } from "react-icons/si";
+import { SiExpress, SiMongodb } from "react-icons/si";
 import { FaSass } from "react-icons/fa6";
 
 import project1Image from "../assets/faukirijatul.svg";
