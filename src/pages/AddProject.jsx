@@ -1,10 +1,21 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { FaPlus } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const AddProject = () => {
+  const navigate = useNavigate();
+  
+  useEffect(() => {
+    const token = localStorage.getItem('authToken');
+    
+    if (!token) {
+      navigate('/page-not-found');
+    }
+  }, [navigate]);
+
   const [formData, setFormData] = useState({
     title: "",
     linkDemo: "",
@@ -59,6 +70,9 @@ const AddProject = () => {
       setLoading(false);
     }
   };
+
+  
+
 
   return (
     <>

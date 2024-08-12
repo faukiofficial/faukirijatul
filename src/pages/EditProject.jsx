@@ -37,6 +37,12 @@ const EditProject = () => {
       }
     };
 
+    const token = localStorage.getItem('authToken');
+    
+    if (!token) {
+      navigate('/page-not-found');
+    }
+
     fetchProject();
   }, [id]);
 
