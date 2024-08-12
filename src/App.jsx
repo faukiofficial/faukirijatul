@@ -10,6 +10,8 @@ import ScrollToTop from "./components/ScrollToTop";
 import AddProject from "./pages/AddProject";
 import EditProject from "./pages/EditProject";
 import Login from "./pages/Login";
+import Register from "./pages/Register";
+import Admins from "./pages/Admins";
 
 
 function App() {
@@ -25,6 +27,8 @@ function App() {
             <Route path="/all-projects" element={<AllProjectsPage />} />
             <Route path="/addproject" element={<AddProject />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/admins" element={<Admins />} />
             <Route path="/editproject/:id" element={<EditProject />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>

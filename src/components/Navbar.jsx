@@ -36,14 +36,16 @@ const Navbar = () => {
 
   const handleLogout = async () => {
     const confirmLogout = window.confirm("Apakah Anda yakin ingin logout?");
-    
+
     if (confirmLogout) {
       try {
-        await axios.post("https://faukirijatul-server.onrender.com/api/auth/logout");
+        await axios.post(
+          "https://faukirijatul-server.onrender.com/api/auth/logout"
+        );
         localStorage.removeItem("authToken");
         console.log("Logout successful, redirecting...");
         setIsAuthenticated(false);
-        navigate('/')
+        navigate("/");
       } catch (error) {
         console.error("Error logging out:", error);
       }
@@ -81,15 +83,22 @@ const Navbar = () => {
                 Experiences
               </a>
               {isAuthenticated ? (
-                <a
-                href="/addproject"
-                className="hover:text-blue-400 transition-colors duration-200 px-3 py-2 rounded-md text-xl font-medium"
-              >
-                Add Project
-              </a>
-              ) : (
                 <>
+                  <a
+                    href="/addproject"
+                    className="hover:text-blue-400 transition-colors duration-200 px-3 py-2 rounded-md text-xl font-medium"
+                  >
+                    Add Project
+                  </a>
+                  <a
+                    href="/admins"
+                    className="hover:text-blue-400 transition-colors duration-200 px-3 py-2 rounded-md text-xl font-medium"
+                  >
+                    Admins
+                  </a>
                 </>
+              ) : (
+                <></>
               )}
               {isAuthenticated ? (
                 <button
@@ -142,15 +151,22 @@ const Navbar = () => {
             Experiences
           </a>
           {isAuthenticated ? (
-            <a
-            href="/addproject"
-            className="block px-3 py-2 rounded-md text-base font-medium hover:text-blue-400 transition-colors duration-200"
-          >
-            Add Project
-          </a>
-          ) : (
             <>
+              <a
+                href="/addproject"
+                className="block px-3 py-2 rounded-md text-base font-medium hover:text-blue-400 transition-colors duration-200"
+              >
+                Add Project
+              </a>
+              <a
+                href="/admins"
+                className="block px-3 py-2 rounded-md text-base font-medium hover:text-blue-400 transition-colors duration-200"
+              >
+                Admin
+              </a>
             </>
+          ) : (
+            <></>
           )}
           {isAuthenticated ? (
             <a

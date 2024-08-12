@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -74,6 +74,14 @@ const Login = () => {
               </button>
             </div>
           </form>
+          <div className="mt-4 text-center">
+            <p>
+              Mau jadi admin?{" "}
+              <Link to="/register" className="text-blue-500 hover:underline">
+                Daftar
+              </Link>
+            </p>
+          </div>
         </div>
       </section>
       <Footer />
