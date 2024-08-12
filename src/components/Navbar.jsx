@@ -42,11 +42,11 @@ const Navbar = () => {
         await axios.post(
           "https://faukirijatul-server.onrender.com/api/auth/logout"
         );
-        localStorage.removeItem("authToken");
         if(window.location.pathname === "/"){
           window.location.reload()
         }
         navigate("/");
+        localStorage.removeItem("authToken");
       } catch (error) {
         console.error("Error logging out:", error);
       }

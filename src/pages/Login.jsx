@@ -3,14 +3,12 @@ import { useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { useAuth } from "../context/AuthContext";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
-  const { login } = useAuth();
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -20,10 +18,8 @@ const Login = () => {
         email,
         password,
       });
-      // Store the token in localStorage (or any other storage)
+      // Store the token in localStorage
       localStorage.setItem("authToken", response.data.token);
-
-      login();
 
       navigate("/"); // Redirect to homepage or dashboard
     } catch (err) {

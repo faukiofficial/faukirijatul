@@ -2,7 +2,6 @@ import Home from "./pages/Home";
 import DetailPortfolio from "./pages/DetailProject";
 import PageNotFound from "./pages/PageNotFound";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { AuthProvider } from "./context/AuthContext";
 import Experience from "./pages/Experience";
 import ScrollToTopButton from "./components/ScrollToTopButton"; // Import komponen ScrollToTopButton
 import AllProjectsPage from "./pages/AllProjectsPage";
@@ -16,7 +15,6 @@ import Admins from "./pages/Admins";
 
 function App() {
   return (
-    <AuthProvider>
       <BrowserRouter>
         <div className="relative min-h-screen">
           <Routes>
@@ -36,7 +34,6 @@ function App() {
           <ScrollToTopButton />
         </div>
       </BrowserRouter>
-    </AuthProvider>
   );
 }
 

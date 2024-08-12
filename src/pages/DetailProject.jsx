@@ -10,13 +10,11 @@ import {
   FaGithub,
 } from "react-icons/fa";
 import axios from "axios";
-import { useAuth } from "../context/AuthContext";
 
 const DetailProject = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const [projectListApi, setProjectListApi] = useState([]);
-  const { isAuthenticated } = useAuth();
 
   useEffect(() => {
     // Fungsi untuk fetch data
@@ -36,7 +34,13 @@ const DetailProject = () => {
   const data = projectListApi[currentIndex];
 
   if (projectListApi.length === 0) {
-    return <p>Loading...</p>;
+    return (
+      <>
+        <Navbar />
+        <p className="text-center text-xl text-slate-600 mt-10 font-bold">Loading...</p>
+      </>
+    
+    )
   }
 
   if (currentIndex === -1) {
@@ -80,6 +84,8 @@ const DetailProject = () => {
       }
     }
   };
+
+  const token = localStorage.getItem('authToken')
 
   return (
     <>
@@ -144,7 +150,7 @@ const DetailProject = () => {
           </p>
 
           {/* Tombol Edit Page, hanya muncul jika isAuthenticated true */}
-          {isAuthenticated && (
+          {token && (
             <div className="text-center mt-8 flex justify-center gap-4">
               <button
                 onClick={handleEditClick}
