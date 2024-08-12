@@ -2,14 +2,12 @@ import { useState, useEffect, useRef } from "react";
 import { FaBars } from "react-icons/fa";
 import { RiCloseFill } from "react-icons/ri";
 import logo from "../assets/logofauki.svg";
-import { useAuth } from "../context/AuthContext";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef(null);
-  const { isAuthenticated, setIsAuthenticated } = useAuth();
   const navigate = useNavigate();
 
   const toggleMenu = () => {
@@ -21,6 +19,8 @@ const Navbar = () => {
       setIsMenuOpen(false);
     }
   };
+
+  const token = localStorage.getItem("authToken")
 
   useEffect(() => {
     if (isMenuOpen) {
@@ -43,8 +43,9 @@ const Navbar = () => {
           "https://faukirijatul-server.onrender.com/api/auth/logout"
         );
         localStorage.removeItem("authToken");
-        console.log("Logout successful, redirecting...");
-        setIsAuthenticated(false);
+        if(window.location.pathname === "/"){
+          window.location.reload()
+        }
         navigate("/");
       } catch (error) {
         console.error("Error logging out:", error);
@@ -82,7 +83,7 @@ const Navbar = () => {
               >
                 Experiences
               </a>
-              {isAuthenticated ? (
+              {token ? (
                 <>
                   <a
                     href="/addproject"
@@ -100,7 +101,7 @@ const Navbar = () => {
               ) : (
                 <></>
               )}
-              {isAuthenticated ? (
+              {token ? (
                 <button
                   onClick={handleLogout}
                   className="py-1 w-20 text-xl text-white bg-red-600 font-bold rounded-md hover:text-blue-400 text-center"
@@ -150,7 +151,7 @@ const Navbar = () => {
           >
             Experiences
           </a>
-          {isAuthenticated ? (
+          {token ? (
             <>
               <a
                 href="/addproject"
@@ -168,7 +169,7 @@ const Navbar = () => {
           ) : (
             <></>
           )}
-          {isAuthenticated ? (
+          {token ? (
             <a
               onClick={handleLogout}
               className="block px-3 py-2 rounded-md text-base font-medium text-white bg-red-500 hover:bg-red-600 transition-colors duration-200"
