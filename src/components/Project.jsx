@@ -18,11 +18,12 @@ const Project = () => {
       } catch (err) {
         console.error(err.message);
         setIsError(true)
+      } finally {
+        setIsLoading(false)
       }
     };
 
     fetchProjects();
-    setIsLoading(false)
   }, []);
 
   const displayedProjects = projectListApi.slice(0, 3);
@@ -35,7 +36,7 @@ const Project = () => {
           <p className="text-center text-xl text-red-600 my-20 font-bold">Error fetching API</p>
         )}
         {isLoading ? (
-          <p className="text-center text-xl text-slate-600 my-20 font-bold">Loading . . .</p>
+          <p className="text-center text-xl text-slate-600 my-20 font-bold">Loading to get the data. . .</p>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {displayedProjects.map((item) => (
