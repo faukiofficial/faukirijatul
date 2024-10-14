@@ -16,7 +16,7 @@ const AllProjectsPage = () => {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await axios.get("https://faukirijatul-server.onrender.com/api/projects");
+        const response = await axios.get("https://faukirijatul-server.vercel.app/api/projects");
         setProjects(response.data);
         setIsloading(false);
       } catch (error) {

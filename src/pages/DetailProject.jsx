@@ -20,7 +20,7 @@ const DetailProject = () => {
     // Fungsi untuk fetch data
     const fetchProjects = async () => {
       try {
-        const response = await axios.get("https://faukirijatul-server.onrender.com/api/projects");
+        const response = await axios.get("https://faukirijatul-server.vercel.app/api/projects");
         setProjectListApi(response.data);
       } catch (err) {
         console.error(err.message);

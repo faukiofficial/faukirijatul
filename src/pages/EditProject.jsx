@@ -23,7 +23,7 @@ const EditProject = () => {
   useEffect(() => {
     const fetchProject = async () => {
       try {
-        const response = await axios.get(`https://faukirijatul-server.onrender.com/api/projects/${id}`);
+        const response = await axios.get(`https://faukirijatul-server.vercel.app/api/projects/${id}`);
         const { title, linkDemo, linkGithub, tool, image } = response.data;
         setFormData({
           title,
@@ -73,7 +73,7 @@ const EditProject = () => {
     }
 
     try {
-      await axios.put(`https://faukirijatul-server.onrender.com/api/projects/${id}`, form, {
+      await axios.put(`https://faukirijatul-server.vercel.app/api/projects/${id}`, form, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 
@@ -90,7 +90,7 @@ const EditProject = () => {
     const confirmDelete = window.confirm("Are you sure you want to delete this project?");
     if (confirmDelete) {
       try {
-        await axios.delete(`https://faukirijatul-server.onrender.com/api/projects/${id}`);
+        await axios.delete(`https://faukirijatul-server.vercel.app/api/projects/${id}`);
         navigate("/");
       } catch (err) {
         setError("Failed to delete the project.");

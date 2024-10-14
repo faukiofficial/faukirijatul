@@ -18,7 +18,7 @@ const Register = () => {
 
     try {
       await axios.post(
-        "https://faukirijatul-server.onrender.com/api/auth/register",
+        "https://faukirijatul-server.vercel.app/api/auth/register",
         {
           fullName,
           email,

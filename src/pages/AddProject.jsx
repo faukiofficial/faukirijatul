@@ -52,7 +52,7 @@ const AddProject = () => {
     form.append("image", image);
 
     try {
-      await axios.post("https://faukirijatul-server.onrender.com/api/projects", form, {
+      await axios.post("https://faukirijatul-server.vercel.app/api/projects", form, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 

@@ -20,7 +20,7 @@ const Admins = () => {
         }
 
         const response = await axios.get(
-          "https://faukirijatul-server.onrender.com/api/auth/users"
+          "https://faukirijatul-server.vercel.app/api/auth/users"
         );
         setUsers(response.data);
       } catch (err) {
@@ -34,7 +34,7 @@ const Admins = () => {
   const verifyUser = async (user) => {
     try {
       const response = await axios.post(
-        "https://faukirijatul-server.onrender.com/api/auth/verifyuser",
+        "https://faukirijatul-server.vercel.app/api/auth/verifyuser",
         {
           email: user.email,
           verificationCode: user.verificationCode,
@@ -61,7 +61,7 @@ const Admins = () => {
     if (window.confirm("Are you sure you want to delete this user?")) {
       try {
         await axios.delete(
-          `https://faukirijatul-server.onrender.com/api/auth/users/${userId}`
+          `https://faukirijatul-server.vercel.app/api/auth/users/${userId}`
         );
         setUsers(users.filter((user) => user._id !== userId));
       } catch (err) {
