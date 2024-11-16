@@ -51,6 +51,20 @@ const Experience = () => {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
+            date="2019"
+            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            icon={<FaComputer />}
+          >
+            <h3 className="vertical-timeline-element-title text-2xl font-semibold text-gray-900">
+              Web Developer Intership
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle font-semibold text-gray-900">
+              Bogor, ID
+            </h4>
+            <p className="text-base">PHP, Laravel, MySQL, Team Work</p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
             date="2015 - 2020"
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             icon={<FaComputer />}
@@ -65,20 +79,6 @@ const Experience = () => {
               Team Work, Time Management, Communication, Basic Programming, Web
               Development
             </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2019"
-            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-            icon={<FaComputer />}
-          >
-            <h3 className="vertical-timeline-element-title text-2xl font-semibold text-gray-900">
-              Web Developer Intership
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle font-semibold text-gray-900">
-              Bogor, ID
-            </h4>
-            <p className="text-base">PHP, Laravel, MySQL, Team Work</p>
           </VerticalTimelineElement>
         </VerticalTimeline>
       </div>
