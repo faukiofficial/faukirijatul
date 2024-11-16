@@ -54,7 +54,7 @@ const Navbar = () => {
                 Projects
               </a>
               <a
-                href="/experience"
+                href="/experiences"
                 className="hover:text-blue-400 transition-colors duration-200 px-3 py-2 rounded-md text-xl"
               >
                 Experiences
@@ -89,7 +89,7 @@ const Navbar = () => {
             Projects
           </a>
           <a
-            href="/experience"
+            href="/experiences"
             className="block px-3 py-2 rounded-md text-base hover:text-blue-400 transition-colors duration-200"
           >
             Experiences

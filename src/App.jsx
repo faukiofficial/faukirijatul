@@ -16,7 +16,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/project/:id" element={<DetailPortfolio />} />
             <Route path="/page-not-found" element={<PageNotFound />} />
-            <Route path="/experience" element={<Experience />} />
+            <Route path="/experiences" element={<Experience />} />
             <Route path="/all-projects" element={<AllProjectsPage />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
