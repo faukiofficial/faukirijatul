@@ -3,6 +3,7 @@ import jagoCatat from "../assets/jagocatat.svg"
 import tokoKita from "../assets/Tokokita.svg"
 import beboTech from "../assets/bebotech.svg"
 import belaja from "../assets/belaja.svg"
+import eventBookingBE from "../assets/Event-Ticket-Booking-Backend.svg"
 
 
 const projects = [
@@ -26,12 +27,20 @@ const projects = [
       _id: "3",
       title: "Belaja",
       image: belaja,
-      linkDemo: "https://bebotech.onrender.com/",
-      linkGithub: "https://github.com/faukiofficial/frontend-sisko.git",
+      linkDemo: "#",
+      linkGithub: "#",
       tool: ["TypeScript", "React JS", "Tailwind CSS", "Redux Toolkit", "Express JS", "Cloudinary", "MongoDB", "Redis", "Nodemailer"],
     },
     {
       _id: "4",
+      title: "Event Ticket Booking (Backend)",
+      image: eventBookingBE,
+      linkDemo: "#",
+      linkGithub: "https://github.com/faukiofficial/event-ticket-booking-backend.git",
+      tool: ["Express JS", "MongoDB", "Nodemailer"],
+    },
+    {
+      _id: "5",
       title: "Bebo Tech",
       image: beboTech,
       linkDemo: "https://bebotech.onrender.com/",
@@ -39,7 +48,7 @@ const projects = [
       tool: ["React JS", "Tailwind CSS", "TypeScript"],
     },
     {
-      _id: "5",
+      _id: "6",
       title: "Personal Portfolio",
       image: personalPortfolio,
       linkDemo: "https://faukirijatul.vercel.app",
