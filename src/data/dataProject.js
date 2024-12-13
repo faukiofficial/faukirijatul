@@ -28,7 +28,7 @@ const projects = [
       title: "Belaja",
       image: belaja,
       linkDemo: "#",
-      linkGithub: "#",
+      linkGithub: "https://github.com/faukiofficial/Belaja.git",
       tool: ["TypeScript", "React JS", "Tailwind CSS", "Redux Toolkit", "Express JS", "Cloudinary", "MongoDB", "Redis", "Nodemailer"],
     },
     {
