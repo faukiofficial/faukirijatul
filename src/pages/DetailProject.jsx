@@ -55,7 +55,7 @@ const DetailProject = () => {
       <Navbar />
       <section
         id="detail-portfolio"
-        className="py-8 bg-gray-100 min-h-[86vh] relative"
+        className="py-8 bg-[#dedede] min-h-[86vh] relative"
       >
         <div className="max-w-4xl mx-auto px-4">
           <h1 className="md:text-4xl text-2xl font-semibold text-center text-gray-900 mb-8 flex flex-col items-center">
