@@ -43,8 +43,8 @@ const AllProjectsPage = () => {
             </p>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {filteredProjects.map((item) => (
-                <div className="item" key={item._id}>
+              {filteredProjects.map((item, index) => (
+                <div className="item" key={index}>
                   <Link
                     to={`/project/${item._id}`}
                     className="block border rounded-md overflow-hidden shadow-2xl relative group w-full h-full"

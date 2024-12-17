@@ -10,8 +10,8 @@ const Project = () => {
         <h3 className="text-4xl font-semibold text-center text-gray-900 mb-8 uppercase">Projects</h3>
         
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {projects.slice(0, 6).map((item) => (
-            <div className="item" key={item._id}>
+          {projects.slice(0, 6).map((item, index) => (
+            <div className="item" key={index}>
               <a href={`/project/${item._id}`} className="block border rounded-md overflow-hidden hover:shadow-2xl relative group w-full h-full">
                 <img className="w-full h-full" src={item.image} alt={item.title} />
                 <div className="absolute inset-0 bg-gray-900 bg-opacity-0 group-hover:bg-opacity-70 flex items-center justify-center transition-opacity duration-300">
