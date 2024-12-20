@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { FaBars } from "react-icons/fa";
 import { RiCloseFill } from "react-icons/ri";
 import logo from "../assets/logofauki.svg";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,28 +38,28 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <a
-              href="/"
+            <Link
+              to="/"
               className="text-2xl font-semibold text-white flex items-center"
             >
               <img src={logo} alt="faukirijatul" className="w-5 800px:w-7 mr-2" />{" "}
               <span className="text-lg 800px:text-2xl">FaukiRijatul</span>
-            </a>
+            </Link>
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
-              <a
-                href="/all-projects"
+              <Link
+                to="/all-projects"
                 className="hover:text-blue-400 transition-colors duration-200 px-3 py-2 rounded-md text-xl"
               >
                 Projects
-              </a>
-              <a
-                href="/experiences"
+              </Link>
+              <Link
+                to="/experiences"
                 className="hover:text-blue-400 transition-colors duration-200 px-3 py-2 rounded-md text-xl"
               >
                 Experiences
-              </a>
+              </Link>
             </div>
           </div>
           <div className="-mr-2 flex md:hidden">
@@ -82,18 +83,18 @@ const Navbar = () => {
         } md:hidden absolute bg-gray-900 w-full`}
       >
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <a
-            href="/all-projects"
+          <Link
+            to="/all-projects"
             className="block px-3 py-2 rounded-md text-base hover:text-blue-400 transition-colors duration-200"
           >
             Projects
-          </a>
-          <a
-            href="/experiences"
+          </Link>
+          <Link
+            to="/experiences"
             className="block px-3 py-2 rounded-md text-base hover:text-blue-400 transition-colors duration-200"
           >
             Experiences
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

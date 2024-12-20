@@ -5,7 +5,7 @@ const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const handleScroll = () => {
-    if (window.scrollY > 300) { // Tampilkan tombol jika scroll lebih dari 300px
+    if (window.scrollY > 300) {
       setIsVisible(true);
     } else {
       setIsVisible(false);

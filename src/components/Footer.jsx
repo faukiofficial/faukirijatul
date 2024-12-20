@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white text-center h-16 flex items-center justify-center">
-        &copy; Fauki Rijatul H   
+        <Link className="hover:underline" to="/">&copy; Fauki Rijatul H  </Link> 
     </footer>
   )
 };
