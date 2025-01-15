@@ -14,7 +14,7 @@ const Header = () => {
           <p className="text-lg 800px:text-xl mt-2">
           Dedicated software engineer committed to lifelong learning and continuous self-improvement.</p>
           <div className="mt-8 flex justify-center">
-            <a href="https://www.linkedin.com/in/fauki-rijatul-h-9a93ab251/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 mx-4">
+            <a href="https://www.linkedin.com/in/faukirijatulh" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 mx-4">
               <SlSocialLinkedin className="w-6 h-6 800px:w-8 800px:h-8" />
             </a>
             <a href="https://github.com/faukiofficial" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 mx-4">
