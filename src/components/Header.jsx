@@ -1,4 +1,4 @@
-import profilePicture from "../assets/profile.jpg";
+import profilePicture from "../assets/Profile2.jpeg";
 import { FaInstagram, FaWhatsapp, FaTwitter, FaGithub } from "react-icons/fa";
 import { FiFacebook } from "react-icons/fi";
 import { SlSocialLinkedin } from "react-icons/sl";
@@ -9,7 +9,7 @@ const Header = () => {
     <header id="header" className="bg-gray-800 bg-center bg-cover relative font-sans text-white text-shadow-lg py-20 600px:py-[200px]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-center h-full">
         <div className="text-center">
-          <img src={profilePicture} alt="Profile" className="w-[10rem] h-[10rem] rounded-full mb-8 mx-auto" />
+          <img src={profilePicture} alt="Profile" className="w-[13rem] h-[13rem] object-cover rounded-full mb-8 mx-auto" />
           <h1 className="text-2xl 800px:text-4xl font-bold uppercase">Fauki Rijatul H</h1>
           <p className="text-lg 800px:text-xl mt-2">
           Dedicated software engineer committed to lifelong learning and continuous self-improvement.</p>
