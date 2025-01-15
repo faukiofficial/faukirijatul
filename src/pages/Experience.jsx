@@ -28,7 +28,7 @@ const Experience = () => {
               Fullstack Web Developer Bootcamp
             </h3>
             <h4 className="vertical-timeline-element-subtitle font-semibold text-gray-900">
-              Online
+              Eduwork, Online
             </h4>
             <ul>
               <li className="text-base">Fullstack MERN</li>
@@ -42,10 +42,10 @@ const Experience = () => {
             icon={<FaBook />}
           >
             <h3 className="vertical-timeline-element-title text-2xl font-semibold text-gray-900">
-              Bookstore Owner & Seller
+              Bookstore Owner & Manager
             </h3>
             <h4 className="vertical-timeline-element-subtitle font-semibold text-gray-900">
-              Bogor, ID
+              Lapak Mumtaz, Bogor, ID
             </h4>
             <p className="text-base">Leadership, Digital Marketing</p>
           </VerticalTimelineElement>
@@ -59,7 +59,7 @@ const Experience = () => {
               Web Developer Intership
             </h3>
             <h4 className="vertical-timeline-element-subtitle font-semibold text-gray-900">
-              Bogor, ID
+              IPB University, Bogor, ID
             </h4>
             <p className="text-base">PHP, Laravel, MySQL, Team Work</p>
           </VerticalTimelineElement>
@@ -73,7 +73,7 @@ const Experience = () => {
               Bachelors Degree : Computer Science
             </h3>
             <h4 className="vertical-timeline-element-subtitle font-semibold text-gray-900">
-              Bogor, ID
+              IPB University, Bogor, ID
             </h4>
             <p className="text-base">
               Team Work, Time Management, Communication, Basic Programming, Web
