@@ -34,7 +34,7 @@ const Header = () => {
             </a>
           </div>
           <div className="mt-10 flex justify-center gap-5">
-            <button className="py-1 px-2 min-w-20 800px:min-w-40 text-base 800px:text-xl bg-white text-gray-900 rounded-md hover:text-blue-400"><a href="#">Resume</a></button>
+            <button className="py-1 px-2 min-w-20 800px:min-w-40 text-base 800px:text-xl bg-white text-gray-900 rounded-md hover:text-blue-400"><a href="https://docs.google.com/document/d/1LT2cfEXHMclTYSuzDeL12Ouym92rz_zX/edit?usp=sharing&ouid=107530896604415709600&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">Resume</a></button>
             <Link to="/experiences" className="py-1 px-2 min-w-20 800px:min-w-40 text-base 800px:text-xl bg-white text-gray-900 rounded-md hover:text-blue-400 block md:hidden">Experiences</Link>
           </div>
         </div>
