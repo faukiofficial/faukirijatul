@@ -1,5 +1,6 @@
 import personalPortfolio from "../assets/faukirijatul.svg"
 import jagoCatat from "../assets/jagocatat.svg"
+import apaKabar from "../assets/apakabar.svg"
 import tokoKita from "../assets/Tokokita.svg"
 import beboTech from "../assets/bebotech.svg"
 import belaja from "../assets/belaja.svg"
@@ -8,6 +9,14 @@ import adminDashboard from "../assets/admindashboard.svg"
 
 
 const projects = [
+    {
+      _id: "79879",
+      title: "Apakabar - Chat App",
+      image: apaKabar,
+      linkDemo: "https://apakabar-chatapp-web.onrender.com",
+      linkGithub: "https://github.com/faukiofficial/apakabar-chatapp-web.git",
+      tool: ["React JS", "Tailwind CSS", "Daisy UI", "Zustand", "Express JS", "Socket.io", "Cloudinary", "OAuth", "MongoDB"],
+    },
     {
       _id: "33093",
       title: "Toko kita",
