@@ -6,6 +6,7 @@ import beboTech from "../assets/bebotech.svg"
 import belaja from "../assets/belaja.svg"
 import eventBookingBE from "../assets/Event-Ticket-Booking-Backend.svg"
 import adminDashboard from "../assets/admindashboard.svg"
+import blogBackendRedis from "../assets/blog-backend-redis.svg"
 
 
 const projects = [
@@ -40,6 +41,14 @@ const projects = [
       linkDemo: "https://jagocatat.onrender.com",
       linkGithub: "https://github.com/faukiofficial/JagoCatat.git",
       tool: ["React JS", "Tailwind CSS", "Express JS", "MongoDB"],
+    },
+    {
+      _id: "87927",
+      title: "Blog Backend",
+      image: blogBackendRedis,
+      linkDemo: "#",
+      linkGithub: "https://github.com/faukiofficial/blog-mern-ts.git",
+      tool: ["TypeScript", "Express JS", "Cloudinary", "MongoDB", "Redis", "Nodemailer", "EJS"],
     },
     {
       _id: "67567",
