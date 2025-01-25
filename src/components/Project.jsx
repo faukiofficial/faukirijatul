@@ -23,7 +23,7 @@ const Project = () => {
           ))}
         </div>
         <div className="flex justify-center mt-8">
-          <a href="/all-projects" className="py-2 px-4 bg-gray-900 text-white font-semibold rounded-md hover:text-blue-400">View All Projects</a>
+          <Link to="/all-projects" className="py-2 px-4 bg-gray-900 text-white font-semibold rounded-md hover:text-blue-400">View All Projects</Link>
         </div>
       </div>
     </section>
