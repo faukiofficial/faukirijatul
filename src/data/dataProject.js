@@ -48,7 +48,7 @@ const projects = [
       title: "Learny - LMS (FrontEnd)",
       image: learny,
       linkDemo: "#",
-      linkGithub: "https://github.com/faukiofficial/faukirijatul.git",
+      linkGithub: "https://github.com/faukiofficial/lms2.git",
       tool: ["React JS", "Tailwind CSS", "Context API", "Clerk"],
     },
     {
