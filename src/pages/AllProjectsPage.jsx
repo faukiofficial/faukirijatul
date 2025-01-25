@@ -3,16 +3,38 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ScrollToTop from "../components/ScrollToTop";
 import { Link } from "react-router-dom";
+import Select from "react-select";
 import projects from "../data/dataProject";
 
 const AllProjectsPage = () => {
   const [searchQuery, setSearchQuery] = useState("");
+  const [selectedTool, setSelectedTool] = useState(null);
 
-  const filteredProjects = projects.filter((project) =>
-    project.title.toLowerCase().includes(searchQuery.toLowerCase())
+  const allTools = Array.from(
+    new Set(projects.flatMap((project) => project.tool))
   );
+
+  const toolOptions = allTools.map((tool) => ({
+    value: tool,
+    label: tool,
+  })).sort((a, b) => a.label.localeCompare(b.label));
+
+  const filteredProjects = projects.filter((project) => {
+    const matchesSearch = project.title
+      .toLowerCase()
+      .includes(searchQuery.toLowerCase());
+    const matchesTool = selectedTool
+      ? project.tool.includes(selectedTool)
+      : true;
+    return matchesSearch && matchesTool;
+  });
+
   const handleSearchChange = (e) => {
     setSearchQuery(e.target.value);
+  };
+
+  const handleToolChange = (selectedOption) => {
+    setSelectedTool(selectedOption ? selectedOption.value : null);
   };
 
   return (
@@ -27,13 +49,21 @@ const AllProjectsPage = () => {
             All Projects
           </h3>
 
-          <div className="mb-8">
+          <div className="mb-8 flex flex-col gap-4 md:flex-row md:items-center">
             <input
               type="text"
               placeholder="Search projects..."
               value={searchQuery}
               onChange={handleSearchChange}
-              className="w-full px-4 py-2 border rounded-md text-gray-700 focus:outline-none focus:ring focus:border-blue-300"
+              className="flex-1 px-4 py-2 md:py-1 h-10 border border-gray-300 rounded-md text-gray-700 focus:outline-none focus:border-blue-300"
+            />
+
+            <Select
+              options={toolOptions}
+              onChange={handleToolChange}
+              isClearable
+              placeholder="Filter by tool..."
+              className="w-full md:w-60"
             />
           </div>
 

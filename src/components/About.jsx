@@ -31,7 +31,7 @@ const About = () => {
           functionality.{" "}
         </p>
         <h4 className="text-center text-3xl font-semibold mt-8 mb-2 uppercase text-gray-900">
-          Programming Languages & Tools
+          Programming Languages, Frameworks & Tools
         </h4>
         <div className="flex justify-center flex-wrap">
           <FaHtml5
