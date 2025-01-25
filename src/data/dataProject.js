@@ -49,7 +49,7 @@ const projects = [
       image: learny,
       linkDemo: "#",
       linkGithub: "https://github.com/faukiofficial/lms2.git",
-      tool: ["React JS", "Tailwind CSS", "Context API", "Clerk"],
+      tool: ["React JS", "TypeScript", "Tailwind CSS", "Context API", "Clerk"],
     },
     {
       _id: "87927",
