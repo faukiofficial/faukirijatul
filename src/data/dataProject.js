@@ -7,6 +7,7 @@ import belaja from "../assets/belaja.svg"
 import eventBookingBE from "../assets/Event-Ticket-Booking-Backend.svg"
 import adminDashboard from "../assets/admindashboard.svg"
 import blogBackendRedis from "../assets/blog-backend-redis.svg"
+import learny from "../assets/learny.svg"
 
 
 const projects = [
@@ -41,6 +42,14 @@ const projects = [
       linkDemo: "https://jagocatat.onrender.com",
       linkGithub: "https://github.com/faukiofficial/JagoCatat.git",
       tool: ["React JS", "Tailwind CSS", "Express JS", "MongoDB"],
+    },
+    {
+      _id: "99232",
+      title: "Learny - LMS (FrontEnd)",
+      image: learny,
+      linkDemo: "#",
+      linkGithub: "https://github.com/faukiofficial/faukirijatul.git",
+      tool: ["React JS", "Tailwind CSS", "Context API", "Clerk"],
     },
     {
       _id: "87927",
