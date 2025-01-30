@@ -60,6 +60,13 @@ const Navbar = () => {
               >
                 Experiences
               </Link>
+              <a
+                href="#"
+                target="_blank"
+                className="hover:text-blue-400 transition-colors duration-200 px-3 py-2 rounded-md text-xl"
+              >
+                Blog
+              </a>
             </div>
           </div>
           <div className="-mr-2 flex md:hidden">
@@ -95,6 +102,13 @@ const Navbar = () => {
           >
             Experiences
           </Link>
+          <a
+            href="#"
+            target="_blank"
+            className="block px-3 py-2 rounded-md text-base hover:text-blue-400 transition-colors duration-200"
+          >
+            Experiences
+          </a>
         </div>
       </div>
     </nav>
