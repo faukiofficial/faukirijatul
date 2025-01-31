@@ -8,16 +8,25 @@ import eventBookingBE from "../assets/Event-Ticket-Booking-Backend.svg"
 import adminDashboard from "../assets/admindashboard.svg"
 import blogBackendRedis from "../assets/blog-backend-redis.svg"
 import learny from "../assets/learny.svg"
+import faukiblog from "../assets/faukiblog.svg"
 
 
 const projects = [
+    {
+      _id: "57960",
+      title: "Fauki - Blog App",
+      image: faukiblog,
+      linkDemo: "https://fauki.vercel.app",
+      linkGithub: "https://github.com/faukirijatul/blog-mern-ts.git",
+      tool: ["TypeScript", "React", "Tailwind CSS", "Redux Toolkit", "Express JS", "Node JS", "Cloudinary", "OAuth", "MongoDB", "Json Web Token"],
+    },
     {
       _id: "79878",
       title: "Apakabar - Chat App",
       image: apaKabar,
       linkDemo: "https://apakabar-chatapp-web.onrender.com",
       linkGithub: "https://github.com/faukiofficial/apakabar-chatapp-web.git",
-      tool: ["React", "Tailwind CSS", "Daisy UI", "Zustand", "Express JS", "Node JS", "Socket.io", "Cloudinary", "OAuth", "MongoDB"],
+      tool: ["React", "Tailwind CSS", "Daisy UI", "Zustand", "Express JS", "Node JS", "Socket.io", "Cloudinary", "OAuth", "MongoDB", "Json Web Token"],
     },
     {
       _id: "33093",
@@ -25,7 +34,7 @@ const projects = [
       image: tokoKita,
       linkDemo: "https://tokokita.onrender.com",
       linkGithub: "https://github.com/faukiofficial/Tokokita.git",
-      tool: ["React", "Tailwind CSS", "Redux Toolkit", "Express JS", "Node JS", "Cloudinary", "MongoDB"],
+      tool: ["React", "Tailwind CSS", "Redux Toolkit", "Express JS", "Node JS", "Cloudinary", "MongoDB", "Json Web Token"],
     },
     {
       _id: "53454",
@@ -33,7 +42,7 @@ const projects = [
       image: adminDashboard,
       linkDemo: "https://adminedu.onrender.com",
       linkGithub: "https://github.com/faukiofficial/admindashboard.git",
-      tool: ["React", "Tailwind CSS", "Express JS", "Node JS", "MongoDB", "Redux Toolkit", "Nodemailer"],
+      tool: ["React", "Tailwind CSS", "Express JS", "Node JS", "MongoDB", "Redux Toolkit", "Nodemailer", "Json Web Token"],
     },
     {
       _id: "31232",
@@ -41,7 +50,7 @@ const projects = [
       image: jagoCatat,
       linkDemo: "https://jagocatat.onrender.com",
       linkGithub: "https://github.com/faukiofficial/JagoCatat.git",
-      tool: ["React", "Tailwind CSS", "Express JS", "Node JS", "MongoDB"],
+      tool: ["React", "Tailwind CSS", "Express JS", "Node JS", "MongoDB", "Json Web Token"],
     },
     {
       _id: "99232",
@@ -57,7 +66,7 @@ const projects = [
       image: blogBackendRedis,
       linkDemo: "#",
       linkGithub: "https://github.com/faukiofficial/blog-mern-ts.git",
-      tool: ["TypeScript", "Express JS", "Node JS", "Cloudinary", "MongoDB", "Redis", "Nodemailer", "EJS"],
+      tool: ["TypeScript", "Express JS", "Node JS", "Cloudinary", "MongoDB", "Redis", "Nodemailer", "EJS", "Json Web Token"],
     },
     {
       _id: "67567",
@@ -65,7 +74,7 @@ const projects = [
       image: belaja,
       linkDemo: "#",
       linkGithub: "https://github.com/faukiofficial/Belaja.git",
-      tool: ["TypeScript", "React", "Tailwind CSS", "Redux Toolkit", "Express JS", "Node JS", "Cloudinary", "MongoDB", "Redis", "Nodemailer"],
+      tool: ["TypeScript", "React", "Tailwind CSS", "Redux Toolkit", "Express JS", "Node JS", "Cloudinary", "MongoDB", "Redis", "Nodemailer", "Json Web Token"],
     },
     {
       _id: "45656",
@@ -73,7 +82,7 @@ const projects = [
       image: eventBookingBE,
       linkDemo: "#",
       linkGithub: "https://github.com/faukiofficial/event-ticket-booking-backend.git",
-      tool: ["Express JS", "Node JS", "MongoDB", "Nodemailer"],
+      tool: ["Express JS", "Node JS", "MongoDB", "Nodemailer", "Json Web Token"],
     },
     {
       _id: "45654",
