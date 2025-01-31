@@ -61,7 +61,7 @@ const Navbar = () => {
                 Experiences
               </Link>
               <a
-                href="#"
+                href="https://fauki.vercel.app"
                 target="_blank"
                 className="hover:text-blue-400 transition-colors duration-200 px-3 py-2 rounded-md text-xl"
               >
@@ -103,11 +103,11 @@ const Navbar = () => {
             Experiences
           </Link>
           <a
-            href="#"
+            href="https://fauki.vercel.app"
             target="_blank"
             className="block px-3 py-2 rounded-md text-base hover:text-blue-400 transition-colors duration-200"
           >
-            Experiences
+            Blog
           </a>
         </div>
       </div>
