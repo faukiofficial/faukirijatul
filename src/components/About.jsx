@@ -5,9 +5,17 @@ import {
   FaNode,
   FaGithub,
 } from "react-icons/fa";
-import { DiJavascript } from "react-icons/di";
+import { DiJavascript, DiRedis } from "react-icons/di";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiExpress, SiMysql, SiMongodb, SiTypescript } from "react-icons/si";
+import {
+  SiExpress,
+  SiMysql,
+  SiMongodb,
+  SiTypescript,
+  SiRedux,
+  SiCloudinary,
+  SiVercel,
+} from "react-icons/si";
 import { FaHtml5 } from "react-icons/fa";
 
 const About = () => {
@@ -62,6 +70,10 @@ const About = () => {
             className="inline-block text-[#61DAFB] w-12 h-auto m-3 cursor-pointer hover:text-blue-400"
             title="React"
           />
+          <SiRedux
+            className="inline-block text-[#764ABC] w-12 h-auto m-3 cursor-pointer hover:text-blue-400"
+            title="Redux"
+          />
           <FaNode
             className="inline-block text-[#339933] w-12 h-auto m-3 cursor-pointer hover:text-blue-400"
             title="Node.js"
@@ -78,9 +90,21 @@ const About = () => {
             className="inline-block text-[#47A248] w-12 h-auto m-3 cursor-pointer hover:text-blue-400"
             title="MongoDB"
           />
+          <DiRedis
+            className="inline-block text-[#DC382D] w-12 h-auto m-3 cursor-pointer hover:text-blue-400"
+            title="Redis"
+          />
+          <SiCloudinary
+            className="inline-block text-[#3448C5] w-12 h-auto m-3 cursor-pointer hover:text-blue-400"
+            title="Cloudinary"
+          />
           <FaGithub
             className="inline-block text-[#181717] w-12 h-auto m-3 cursor-pointer hover:text-blue-400"
             title="GitHub"
+          />
+          <SiVercel 
+            className="inline-block text-[#000000] w-12 h-auto m-3 cursor-pointer hover:text-blue-400"
+            title="Vercel"
           />
         </div>
       </div>
