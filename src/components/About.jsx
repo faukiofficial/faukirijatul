@@ -6,7 +6,7 @@ import {
   FaGithub,
 } from "react-icons/fa";
 import { DiJavascript, DiRedis } from "react-icons/di";
-import { RiTailwindCssFill } from "react-icons/ri";
+import { RiTailwindCssFill, RiNextjsFill } from "react-icons/ri";
 import {
   SiExpress,
   SiMysql,
@@ -26,6 +26,7 @@ const skills = [
   { icon: FaBootstrap, color: "#7952B3", name: "Bootstrap" },
   { icon: RiTailwindCssFill, color: "#38B2AC", name: "Tailwind CSS" },
   { icon: FaReact, color: "#61DAFB", name: "React" },
+  { icon: RiNextjsFill, color: "#000000", name: "Next.js" },
   { icon: SiRedux, color: "#764ABC", name: "Redux" },
   { icon: FaNode, color: "#339933", name: "Node.js" },
   { icon: SiExpress, color: "#000000", name: "Express.js" },
