@@ -14,7 +14,7 @@ const Experience = () => {
     <>
       <Navbar />
       <div className="bg-[#dedede]">
-        <h1 className="text-4xl font-semibold text-center text-gray-900 mb-8 pt-10">
+        <h1 className="text-4xl font-semibold text-center text-gray-900 mb-8 pt-28">
           Experiences
         </h1>
         <VerticalTimeline>
@@ -42,7 +42,7 @@ const Experience = () => {
             icon={<FaBook />}
           >
             <h3 className="vertical-timeline-element-title text-2xl font-semibold text-gray-900">
-              Bookstore Owner & Manager
+              Bookstore Manager
             </h3>
             <h4 className="vertical-timeline-element-subtitle font-semibold text-gray-900">
               Lapak Mumtaz, Bogor, ID

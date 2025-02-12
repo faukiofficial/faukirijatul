@@ -10,7 +10,7 @@ const Project = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
         <h3 className="text-4xl font-semibold text-center text-gray-900 mb-8 uppercase">Projects ({projects.length})</h3>
         
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.slice(0, 6).map((item, index) => (
             <div className="item" key={index}>
               <Link to={`/project/${item._id}`} className="block border rounded-md overflow-hidden hover:shadow-2xl relative group w-full h-full">

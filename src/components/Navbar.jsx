@@ -32,7 +32,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="bg-gray-900 text-white sticky top-0 z-50 shadow-lg"
+      className="bg-gray-900/90 backdrop-blur text-white fixed w-full top-0 z-50 shadow-lg"
       ref={menuRef}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

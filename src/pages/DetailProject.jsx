@@ -55,20 +55,25 @@ const DetailProject = () => {
       <Navbar />
       <section
         id="detail-portfolio"
-        className="py-8 bg-[#dedede] min-h-[86vh] relative"
+        className="pt-28 pb-8 bg-[#dedede] min-h-[86vh] relative"
       >
         <div className="max-w-4xl mx-auto px-4">
-          <h1 className="md:text-4xl text-2xl font-semibold text-center text-gray-900 mb-8 flex flex-col items-center">
+          <h1 className="md:text-4xl text-2xl font-semibold text-center text-gray-900 flex flex-col items-center pb-4">
             {data.title}
             <span className="text-base font-normal">( {projects.indexOf(data) + 1} of {projects.length} projects )</span>
           </h1>
-          <div className="relative-container relative flex items-center justify-center">
+          {data.description && (
+            <p className="text-gray-900 text-base lg:text-lg">
+              {data.description}
+            </p>
+          )}
+          <div className="relative-container relative flex items-center justify-center mt-4">
             <button
               onClick={handlePrevClick}
-              className={`bg-slate-200 absolute left-[10px] md:text-4xl text-2xl p-3 rounded-full transition-transform duration-200 z-30 ${
+              className={`bg-slate-200 lg:bg-slate-800 absolute left-[10px] lg:-left-[80px] md:text-4xl text-2xl p-3 rounded-full transition-transform duration-200 z-30 ${
                 currentIndex === 0
                   ? "text-gray-400 cursor-not-allowed"
-                  : "text-blue-400 hover:text-gray-900 hover:scale-110"
+                  : "text-blue-400 hover:text-gray-900 lg:hover:text-blue-300 hover:scale-110"
               }`}
               disabled={projects.indexOf(data) === 0}
             >
@@ -77,14 +82,14 @@ const DetailProject = () => {
             <img
               src={data.image}
               alt={data.title}
-              className={`w-full rounded-lg relative`}
+              className="w-full rounded-lg relative"
             />
             <button
               onClick={handleNextClick}
-              className={`bg-slate-200 absolute right-[10px] md:text-4xl text-2xl p-3 rounded-full transition-transform duration-200 ${
+              className={`bg-slate-200 lg:bg-slate-800 absolute right-[10px] lg:-right-[80px] md:text-4xl text-2xl p-3 rounded-full transition-transform duration-200 ${
                 projects.indexOf(data) === projects.length - 1
                   ? "text-gray-400 cursor-not-allowed"
-                  : "text-blue-400 hover:text-gray-900 hover:scale-110"
+                  : "text-blue-400 hover:text-gray-900 lg:hover:text-blue-300 hover:scale-110"
               }`}
               disabled={currentIndex === projects.length}
             >

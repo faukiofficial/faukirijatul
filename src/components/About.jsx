@@ -18,6 +18,25 @@ import {
 } from "react-icons/si";
 import { FaHtml5 } from "react-icons/fa";
 
+const skills = [
+  { icon: FaHtml5, color: "#E34F26", name: "HTML" },
+  { icon: FaCss3Alt, color: "#1572B6", name: "CSS" },
+  { icon: DiJavascript, color: "#F7DF1E", name: "JavaScript" },
+  { icon: SiTypescript, color: "#007ACC", name: "TypeScript" },
+  { icon: FaBootstrap, color: "#7952B3", name: "Bootstrap" },
+  { icon: RiTailwindCssFill, color: "#38B2AC", name: "Tailwind CSS" },
+  { icon: FaReact, color: "#61DAFB", name: "React" },
+  { icon: SiRedux, color: "#764ABC", name: "Redux" },
+  { icon: FaNode, color: "#339933", name: "Node.js" },
+  { icon: SiExpress, color: "#000000", name: "Express.js" },
+  { icon: SiMysql, color: "#4479A1", name: "MySQL" },
+  { icon: SiMongodb, color: "#47A248", name: "MongoDB" },
+  { icon: DiRedis, color: "#DC382D", name: "Redis" },
+  { icon: SiCloudinary, color: "#3448C5", name: "Cloudinary" },
+  { icon: FaGithub, color: "#181717", name: "GitHub" },
+  { icon: SiVercel, color: "#000000", name: "Vercel" },
+];
+
 const About = () => {
   return (
     <section
@@ -29,83 +48,33 @@ const About = () => {
           About
         </h3>
         <p className="text-center text-gray-900 text-lg 800px:text-2xl">
-          Experienced in collaborating on various web projects as part of
-          academic assignments and personal learning. Passionate about web
-          development, with a focus on JavaScript frameworks and a drive to
-          create impactful digital solutions. Dedicated to using skills to
-          deliver exceptional user experiences and support business growth.
-          Eager to contribute to innovative teams and projects that push the
-          boundaries of web technology and enhance digital presence and
-          functionality.{" "}
+          Gained experience in programming through academic projects and
+          hands-on web development. Worked on several full-stack projects,
+          building applications with Node.js, React, and Next.js. Passionate
+          about full-stack development, with a focus on creating impactful
+          digital solutions that enhance user experience and drive business
+          growth. Excited to contribute to innovative teams and projects that
+          push the boundaries of web technology, particularly in full-stack
+          development.
         </p>
-        <h4 className="text-center text-3xl font-semibold mt-8 mb-2 uppercase text-gray-900">
+        <h4 className="text-center text-3xl font-semibold mt-8 mb-5 uppercase text-gray-900">
           Programming Languages, Frameworks & Tools
         </h4>
-        <div className="flex justify-center flex-wrap">
-          <FaHtml5
-            className="inline-block text-[#E34F26] w-12 h-auto m-3 cursor-pointer hover:text-blue-400"
-            title="HTML"
-          />
-          <FaCss3Alt
-            className="inline-block text-[#1572B6] w-12 h-auto m-3 cursor-pointer hover:text-blue-400"
-            title="CSS"
-          />
-          <DiJavascript
-            className="inline-block text-[#F7DF1E] w-12 h-auto m-3 cursor-pointer hover:text-blue-400"
-            title="JavaScript"
-          />
-          <SiTypescript
-            className="inline-block text-[#007ACC] w-12 h-auto m-3 cursor-pointer hover:text-blue-400"
-            title="TypeScript"
-          />
-          <FaBootstrap
-            className="inline-block text-[#7952B3] w-12 h-auto m-3 cursor-pointer hover:text-blue-400"
-            title="Bootstrap"
-          />
-          <RiTailwindCssFill
-            className="inline-block text-[#38B2AC] w-12 h-auto m-3 cursor-pointer hover:text-blue-400"
-            title="Tailwind CSS"
-          />
-          <FaReact
-            className="inline-block text-[#61DAFB] w-12 h-auto m-3 cursor-pointer hover:text-blue-400"
-            title="React"
-          />
-          <SiRedux
-            className="inline-block text-[#764ABC] w-12 h-auto m-3 cursor-pointer hover:text-blue-400"
-            title="Redux"
-          />
-          <FaNode
-            className="inline-block text-[#339933] w-12 h-auto m-3 cursor-pointer hover:text-blue-400"
-            title="Node.js"
-          />
-          <SiExpress
-            className="inline-block text-[#000000] w-12 h-auto m-3 cursor-pointer hover:text-blue-400"
-            title="Express.js"
-          />
-          <SiMysql
-            className="inline-block text-[#4479A1] w-12 h-auto m-3 cursor-pointer hover:text-blue-400"
-            title="MySQL"
-          />
-          <SiMongodb
-            className="inline-block text-[#47A248] w-12 h-auto m-3 cursor-pointer hover:text-blue-400"
-            title="MongoDB"
-          />
-          <DiRedis
-            className="inline-block text-[#DC382D] w-12 h-auto m-3 cursor-pointer hover:text-blue-400"
-            title="Redis"
-          />
-          <SiCloudinary
-            className="inline-block text-[#3448C5] w-12 h-auto m-3 cursor-pointer hover:text-blue-400"
-            title="Cloudinary"
-          />
-          <FaGithub
-            className="inline-block text-[#181717] w-12 h-auto m-3 cursor-pointer hover:text-blue-400"
-            title="GitHub"
-          />
-          <SiVercel 
-            className="inline-block text-[#000000] w-12 h-auto m-3 cursor-pointer hover:text-blue-400"
-            title="Vercel"
-          />
+        <div className="flex justify-center flex-wrap gap-2">
+          {skills.map(({ icon: Icon, color, name }) => (
+            <div
+              key={name}
+              className="flex flex-col items-center justify-center gap-1 min-w-[100px] border hover:border-blue-400 hover:bg-gray-100 rounded-md p-2 cursor-pointer"
+            >
+              <Icon
+                className="w-12 h-auto hover:text-blue-400"
+                style={{ color }}
+              />
+              <p className="text-center text-gray-900 text-sm 800px:text-base">
+                {name}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
