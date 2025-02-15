@@ -1,14 +1,15 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ScrollToTop from "../components/ScrollToTop";
 import { Link } from "react-router-dom";
 import Select from "react-select";
 import projects from "../data/dataProject";
+import { AppContext } from "../context/AppContext";
 
 const AllProjectsPage = () => {
   const [searchQuery, setSearchQuery] = useState("");
-  const [selectedTool, setSelectedTool] = useState(null);
+  const {selectedTool, setSelectedTool} = useContext(AppContext);
 
   const allTools = Array.from(
     new Set(projects.flatMap((project) => project.tool))
@@ -61,6 +62,7 @@ const AllProjectsPage = () => {
             <Select
               options={toolOptions}
               onChange={handleToolChange}
+              value={toolOptions.find((option) => option.value === selectedTool)}
               isClearable
               placeholder="Filter by tool..."
               className="w-full md:w-60"

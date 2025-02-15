@@ -184,7 +184,7 @@ const projects = [
     image: personalPortfolio,
     linkDemo: "https://faukirijatul.vercel.app",
     linkGithub: "https://github.com/faukiofficial/faukirijatul.git",
-    tool: ["React", "Tailwind CSS"],
+    tool: ["React", "Tailwind CSS", "Context API"],
   },
 ];
 

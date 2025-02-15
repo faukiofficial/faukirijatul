@@ -17,6 +17,9 @@ import {
   SiVercel,
 } from "react-icons/si";
 import { FaHtml5 } from "react-icons/fa";
+import { useContext } from "react";
+import { AppContext } from "../context/AppContext";
+import { useNavigate } from "react-router-dom";
 
 const skills = [
   { icon: FaHtml5, color: "#E34F26", name: "HTML" },
@@ -26,10 +29,11 @@ const skills = [
   { icon: FaBootstrap, color: "#7952B3", name: "Bootstrap" },
   { icon: RiTailwindCssFill, color: "#38B2AC", name: "Tailwind CSS" },
   { icon: FaReact, color: "#61DAFB", name: "React" },
-  { icon: RiNextjsFill, color: "#000000", name: "Next.js" },
-  { icon: SiRedux, color: "#764ABC", name: "Redux" },
-  { icon: FaNode, color: "#339933", name: "Node.js" },
-  { icon: SiExpress, color: "#000000", name: "Express.js" },
+  { icon: RiNextjsFill, color: "#000000", name: "Next JS" },
+  { icon: FaReact, color: "#61DAFB", name: "Context API" },
+  { icon: SiRedux, color: "#764ABC", name: "Redux Toolkit" },
+  { icon: FaNode, color: "#339933", name: "Node JS" },
+  { icon: SiExpress, color: "#000000", name: "Express JS" },
   { icon: SiMysql, color: "#4479A1", name: "MySQL" },
   { icon: SiMongodb, color: "#47A248", name: "MongoDB" },
   { icon: DiRedis, color: "#DC382D", name: "Redis" },
@@ -39,6 +43,8 @@ const skills = [
 ];
 
 const About = () => {
+  const {setSelectedTool} = useContext(AppContext);
+  const navigate = useNavigate();
   return (
     <section
       id="about"
@@ -66,6 +72,10 @@ const About = () => {
             <div
               key={name}
               className="flex flex-col items-center justify-center gap-1 min-w-[100px] border hover:border-blue-400 hover:bg-gray-100 rounded-md p-2 cursor-pointer"
+              onClick={() => {
+                setSelectedTool(name);
+                navigate("/all-projects");
+              }}
             >
               <Icon
                 className="w-12 h-auto hover:text-blue-400"
