@@ -6,7 +6,7 @@ function PageNotFound() {
   return (
     <div>
       <Navbar />
-      <div className="min-h-[94vh] flex flex-col justify-center items-center gap-4">
+      <div className="min-h-[92vh] flex flex-col justify-center items-center gap-4">
         <RiErrorWarningLine className="text-[6rem] text-red-500 mx-auto" />
         <h3 className="text-2xl font-semibold text-gray-900">
           Oopps
