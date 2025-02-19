@@ -9,16 +9,18 @@ import { AppContext } from "../context/AppContext";
 
 const AllProjectsPage = () => {
   const [searchQuery, setSearchQuery] = useState("");
-  const {selectedTool, setSelectedTool} = useContext(AppContext);
+  const { selectedTool, setSelectedTool } = useContext(AppContext);
 
   const allTools = Array.from(
     new Set(projects.flatMap((project) => project.tool))
   );
 
-  const toolOptions = allTools.map((tool) => ({
-    value: tool,
-    label: tool,
-  })).sort((a, b) => a.label.localeCompare(b.label));
+  const toolOptions = allTools
+    .map((tool) => ({
+      value: tool,
+      label: tool,
+    }))
+    .sort((a, b) => a.label.localeCompare(b.label));
 
   const filteredProjects = projects.filter((project) => {
     const matchesSearch = project.title
@@ -43,7 +45,7 @@ const AllProjectsPage = () => {
       <Navbar />
       <section
         id="all-projects"
-        className="pt-28 pb-6 bg-[#dedede] min-h-[92vh]"
+        className="pt-28 pb-6 bg-[#dedede] min-h-[calc(100vh-60px)]"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h3 className="text-4xl font-semibold text-center text-gray-900 mb-8">
@@ -62,7 +64,9 @@ const AllProjectsPage = () => {
             <Select
               options={toolOptions}
               onChange={handleToolChange}
-              value={toolOptions.find((option) => option.value === selectedTool)}
+              value={toolOptions.find(
+                (option) => option.value === selectedTool
+              )}
               isClearable
               placeholder="Filter by tool..."
               className="w-full md:w-60"

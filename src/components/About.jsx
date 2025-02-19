@@ -1,50 +1,12 @@
-import {
-  FaCss3Alt,
-  FaBootstrap,
-  FaReact,
-  FaNode,
-  FaGithub,
-} from "react-icons/fa";
-import { DiJavascript, DiRedis } from "react-icons/di";
-import { RiTailwindCssFill, RiNextjsFill } from "react-icons/ri";
-import {
-  SiExpress,
-  SiMysql,
-  SiMongodb,
-  SiTypescript,
-  SiRedux,
-  SiCloudinary,
-  SiVercel,
-} from "react-icons/si";
-import { FaHtml5 } from "react-icons/fa";
 import { useContext } from "react";
 import { AppContext } from "../context/AppContext";
 import { useNavigate } from "react-router-dom";
-
-const skills = [
-  { icon: FaHtml5, color: "#E34F26", name: "HTML" },
-  { icon: FaCss3Alt, color: "#1572B6", name: "CSS" },
-  { icon: DiJavascript, color: "#F7DF1E", name: "JavaScript" },
-  { icon: SiTypescript, color: "#007ACC", name: "TypeScript" },
-  { icon: FaBootstrap, color: "#7952B3", name: "Bootstrap" },
-  { icon: RiTailwindCssFill, color: "#38B2AC", name: "Tailwind CSS" },
-  { icon: FaReact, color: "#61DAFB", name: "React" },
-  { icon: RiNextjsFill, color: "#000000", name: "Next JS" },
-  { icon: FaReact, color: "#61DAFB", name: "Context API" },
-  { icon: SiRedux, color: "#764ABC", name: "Redux Toolkit" },
-  { icon: FaNode, color: "#339933", name: "Node JS" },
-  { icon: SiExpress, color: "#000000", name: "Express JS" },
-  { icon: SiMysql, color: "#4479A1", name: "MySQL" },
-  { icon: SiMongodb, color: "#47A248", name: "MongoDB" },
-  { icon: DiRedis, color: "#DC382D", name: "Redis" },
-  { icon: SiCloudinary, color: "#3448C5", name: "Cloudinary" },
-  { icon: FaGithub, color: "#181717", name: "GitHub" },
-  { icon: SiVercel, color: "#000000", name: "Vercel" },
-];
+import { stackData } from "../data/stackData";
 
 const About = () => {
-  const {setSelectedTool} = useContext(AppContext);
+  const { setSelectedTool } = useContext(AppContext);
   const navigate = useNavigate();
+
   return (
     <section
       id="about"
@@ -67,22 +29,20 @@ const About = () => {
         <h4 className="text-center text-3xl font-semibold mt-8 mb-5 uppercase text-gray-900">
           Programming Languages, Frameworks & Tools
         </h4>
+
         <div className="flex justify-center flex-wrap gap-2">
-          {skills.map(({ icon: Icon, color, name }) => (
+          {stackData.map((stack) => (
             <div
-              key={name}
-              className="flex flex-col items-center justify-center gap-1 min-w-[100px] border hover:border-blue-400 hover:bg-gray-100 rounded-md p-2 cursor-pointer"
+              key={stack.id}
+              className="flex flex-col items-center justify-between gap-1 min-w-[100px] border hover:border-blue-400 hover:bg-gray-100 rounded-md p-2 cursor-pointer"
               onClick={() => {
-                setSelectedTool(name);
+                setSelectedTool(stack.title);
                 navigate("/all-projects");
               }}
             >
-              <Icon
-                className="w-12 h-auto hover:text-blue-400"
-                style={{ color }}
-              />
+              <img src={stack.icon} alt={stack.title} height={50} width={50} />
               <p className="text-center text-gray-900 text-sm 800px:text-base">
-                {name}
+                {stack.title}
               </p>
             </div>
           ))}
