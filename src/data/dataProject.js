@@ -211,8 +211,8 @@ const projects = [
   },
   {
     _id: "45654",
-    title: "Bebo Tech - Web App",
-    description: "Make an frontend based on Figma design.",
+    title: "Bebo Tech (Figma Slicing) - Web App",
+    description: "Make a frontend based on Figma design.",
     image: beboTech,
     linkDemo: "https://bebotech.onrender.com/",
     linkGithub: "https://github.com/faukiofficial/frontend-sisko.git",
