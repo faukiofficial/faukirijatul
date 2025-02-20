@@ -42,7 +42,11 @@ const Navbar = () => {
               to="/"
               className="text-2xl font-semibold text-white flex items-center"
             >
-              <img src={logo} alt="faukirijatul" className="w-5 800px:w-7 mr-2" />{" "}
+              <img
+                src={logo}
+                alt="faukirijatul"
+                className="w-5 800px:w-7 mr-2"
+              />{" "}
               <span className="text-lg 800px:text-2xl">FaukiRijatul</span>
             </Link>
           </div>

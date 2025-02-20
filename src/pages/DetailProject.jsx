@@ -22,8 +22,7 @@ const DetailProject = () => {
       <>
         <Navbar />
       </>
-    
-    )
+    );
   }
 
   if (currentIndex === -1) {
@@ -53,20 +52,14 @@ const DetailProject = () => {
   return (
     <>
       <Navbar />
-      <section
-        id="detail-portfolio"
-        className="pt-28 pb-8 bg-[#dedede] min-h-[86vh] relative"
-      >
+      <section className="pt-28  pb-10 bg-[#dedede] min-h-[94vh] relative">
         <div className="max-w-4xl mx-auto px-4">
-          <h1 className="md:text-4xl text-2xl font-semibold text-center text-gray-900 flex flex-col items-center pb-4">
+          <h1 className="md:text-4xl text-2xl font-semibold text-center text-gray-900 flex flex-col items-center">
             {data.title}
-            <span className="text-base font-normal">( {projects.indexOf(data) + 1} of {projects.length} projects )</span>
+            <span className="text-base font-normal mt-2">
+              ( {projects.indexOf(data) + 1} of {projects.length} projects )
+            </span>
           </h1>
-          {data.description && (
-            <p className="text-gray-900 text-base lg:text-lg">
-              {data.description}
-            </p>
-          )}
           <div className="relative-container relative flex items-center justify-center mt-4">
             <button
               onClick={handlePrevClick}
@@ -97,25 +90,39 @@ const DetailProject = () => {
             </button>
           </div>
           <div className="flex gap-1 flex-row justify-center items-center mt-5">
-            <button
-              onClick={() => handleViewDemoClick(data.linkDemo)}
-              className="bg-blue-400 text-white rounded-full p-2 md:w-[15rem] text-base md:text-2xl hover:bg-blue-600 transition-colors duration-200 flex items-center justify-center shadow-lg mr-4"
-            >
-              <FaPlayCircle className="mr-2" />
-              View Demo
-            </button>
-            <button
-              onClick={() => handleViewGithubClick(data.linkGithub)}
-              className="bg-gray-900 text-white rounded-full p-2 md:w-[15rem] text-base md:text-2xl hover:bg-gray-700 transition-colors duration-200 flex items-center justify-center shadow-lg"
-            >
-              <FaGithub className="mr-2" />
-              View on GitHub
-            </button>
+            {data.linkDemo && (
+              <button
+                onClick={() => handleViewDemoClick(data.linkDemo)}
+                className="bg-blue-400 text-white rounded-full p-2 md:w-[15rem] text-base md:text-2xl hover:bg-blue-600 transition-colors duration-200 flex items-center justify-center shadow-lg mr-4"
+              >
+                <FaPlayCircle className="mr-2" />
+                View Demo
+              </button>
+            )}
+            {data.linkGithub && (
+              <button
+                onClick={() => handleViewGithubClick(data.linkGithub)}
+                className="bg-gray-900 text-white rounded-full p-2 md:w-[15rem] text-base md:text-2xl hover:bg-gray-700 transition-colors duration-200 flex items-center justify-center shadow-lg"
+              >
+                <FaGithub className="mr-2" />
+                View on GitHub
+              </button>
+            )}
           </div>
-          <p className="skill text-center text-xl text-gray-800 md:mt-[35px] mt-[40px]">
+
+          {data.description && (
+            <p className="text-gray-900 text-base lg:text-lg md:mt-[35px] mt-[40px] mb-4 text-center">
+              {data.description}
+            </p>
+          )}
+          <div
+            className={`text-center text-xl text-gray-800 ${
+              data.description ? "" : " md:mt-[35px] mt-[40px]"
+            }`}
+          >
             <b className="font-semibold">Languanges & tools:</b>
-            <div className="mt-2">{data.tool.join(", ")}</div>
-          </p>
+            <div className="mt-2">{data.tool.join(" | ")}</div>
+          </div>
         </div>
       </section>
       <Footer />

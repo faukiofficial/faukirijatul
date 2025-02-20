@@ -1,6 +1,5 @@
 import profilePicture from "../assets/Profile2.jpeg";
-import { FaInstagram, FaWhatsapp, FaTwitter, FaGithub } from "react-icons/fa";
-import { FiFacebook } from "react-icons/fi";
+import { FaInstagram, FaWhatsapp, FaGithub } from "react-icons/fa";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { Link } from "react-router-dom";
 
@@ -9,7 +8,7 @@ const Header = () => {
     <header
       id="header"
       className="bg-gray-800 text-white pb-20 pt-32 600px:pb-[200px] 600px:pt-[230px] bg-[radial-gradient(rgba(229,231,235,0.05)_5%,transparent_20%)] bg-[size:10px_10px] lg:bg-[size:20px_20px]"
-      >
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-center">
         <div className="text-center space-y-8">
           <img
@@ -54,22 +53,6 @@ const Header = () => {
               className="text-white hover:text-blue-400 mx-4"
             >
               <FaInstagram className="w-6 h-6 800px:w-8 800px:h-8" />
-            </a>
-            <a
-              href="https://facebook.com/faukiofficial"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-blue-400 mx-4"
-            >
-              <FiFacebook className="w-6 h-6 800px:w-8 800px:h-8" />
-            </a>
-            <a
-              href="https://x.com/faukiofficial"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-blue-400 mx-4"
-            >
-              <FaTwitter className="w-6 h-6 800px:w-8 800px:h-8" />
             </a>
             <a
               href="https://wa.me/6287845352397"
