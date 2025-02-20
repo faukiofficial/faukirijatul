@@ -10,9 +10,9 @@ const About = () => {
   return (
     <section
       id="about"
-      className="relative text-lg bg-gray-200 text-white py-8"
+      className="relative text-lg bg-gray-200 text-white py-16"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h3 className="text-4xl font-semibold text-center text-gray-900 mb-8 uppercase">
           About
         </h3>

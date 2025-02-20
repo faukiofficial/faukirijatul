@@ -1,12 +1,12 @@
 // import { Link } from "react-router-dom";
 import { Link } from "react-router-dom";
 import projects from "../data/dataProject";
-import ProjectCard from "./projectCard.jsx";
+import ProjectCard from "./ProjectCard";
 
 const Project = () => {
   return (
-    <section id="project" className="py-8 bg-gray-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
+    <section id="project" className="py-16 bg-gray-300">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h3 className="text-4xl font-semibold text-center text-gray-900 mb-8 uppercase">
           Projects ({projects.length})
         </h3>

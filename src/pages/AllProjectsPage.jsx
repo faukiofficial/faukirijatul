@@ -5,7 +5,7 @@ import ScrollToTop from "../components/ScrollToTop";
 import Select from "react-select";
 import projects from "../data/dataProject";
 import { AppContext } from "../context/AppContext";
-import ProjectCard from "../components/projectCard.jsx";
+import ProjectCard from "../components/ProjectCard";
 
 const AllProjectsPage = () => {
   const [searchQuery, setSearchQuery] = useState("");

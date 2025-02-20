@@ -10,8 +10,8 @@ const Home = () => {
     <>
       <Navbar />
       <Header />
-      <Project />
       <About />
+      <Project />
       <Footer />
       <ScrollToTop />
     </>
