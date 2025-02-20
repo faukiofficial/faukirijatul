@@ -5,7 +5,7 @@ import ScrollToTop from "../components/ScrollToTop";
 import Select from "react-select";
 import projects from "../data/dataProject";
 import { AppContext } from "../context/AppContext";
-import ProjectCard from "../components/ProjectCard";
+import { Link } from "react-router-dom";
 
 const AllProjectsPage = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -80,7 +80,24 @@ const AllProjectsPage = () => {
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {filteredProjects.map((item) => (
-                <ProjectCard key={item._id} item={item} />
+                <Link
+                  to={`/project/${item._id}`}
+                  key={item._id}
+                  className="border rounded-md hover:shadow-xl hover:shadow-gray-500 hover:scale-120 transition duration-500 ease-in-out transform hover:rotate-5 w-full h-full bg-white"
+                >
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full rounded-t-md border-b"
+                  />
+                  <div className="p-3">
+                    <h4 className="text-lg font-semibold">{item.title}</h4>
+                    <div className="mt-2">
+                      <b className="font-semibold">Main Stack :</b>
+                      <div>{item.mainStack?.join(" | ")}</div>
+                    </div>
+                  </div>
+                </Link>
               ))}
             </div>
           )}
