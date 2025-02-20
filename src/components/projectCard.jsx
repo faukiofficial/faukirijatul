@@ -1,10 +1,11 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-const ProjectCard = ({ item }) => {
+const ProjectCard = ({ item, key }) => {
   return (
     <Link
       to={`/project/${item._id}`}
+      key={key}
       className="border rounded-md hover:shadow-xl hover:shadow-gray-500 hover:scale-120 transition duration-500 ease-in-out transform hover:rotate-5 w-full h-full bg-white"
     >
       <img
@@ -30,6 +31,7 @@ ProjectCard.propTypes = {
     image: PropTypes.string.isRequired,
     mainStack: PropTypes.arrayOf(PropTypes.string),
   }).isRequired,
+  key: PropTypes.string.isRequired,
 };
 
 export default ProjectCard;
