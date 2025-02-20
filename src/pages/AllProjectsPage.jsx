@@ -45,7 +45,7 @@ const AllProjectsPage = () => {
       <Navbar />
       <section
         id="all-projects"
-        className="pt-28 pb-10 bg-[#dedede] min-h-[calc(100vh-60px)]"
+        className="pt-28 pb-16 bg-[#dedede] min-h-[calc(100vh-60px)]"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h3 className="text-4xl font-semibold text-center text-gray-900 mb-8">
