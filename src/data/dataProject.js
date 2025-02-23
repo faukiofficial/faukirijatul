@@ -1,14 +1,14 @@
-import personalPortfolio from "../assets/faukirijatul.svg";
-import jagoCatat from "../assets/jagocatat.svg";
-import apaKabar from "../assets/apakabar.svg";
-import tokoKita from "../assets/Tokokita.svg";
-import beboTech from "../assets/bebotech.svg";
-import belaja from "../assets/belaja.svg";
-import eventBookingBE from "../assets/Event-Ticket-Booking-Backend.svg";
-import adminDashboard from "../assets/admindashboard.svg";
-import blogBackendRedis from "../assets/blog-backend-redis.svg";
-import learny from "../assets/learny.svg";
-import faukiblog from "../assets/faukiblog.svg";
+import personalPortfolio from "../assets/projects/faukirijatul.svg";
+import jagoCatat from "../assets/projects/jagocatat.svg";
+import apaKabar from "../assets/projects/apakabar.svg";
+import tokoKita from "../assets/projects/Tokokita.svg";
+import beboTech from "../assets/projects/bebotech.svg";
+import belaja from "../assets/projects/belaja.svg";
+import eventBookingBE from "../assets/projects/Event-Ticket-Booking-Backend.svg";
+import adminDashboard from "../assets/projects/admindashboard.svg";
+import blogBackendRedis from "../assets/projects/blog-backend-redis.svg";
+import learny from "../assets/projects/learny.svg";
+import faukiblog from "../assets/projects/faukiblog.svg";
 
 const projects = [
   {
@@ -20,6 +20,7 @@ const projects = [
     linkDemo: "https://fauki.vercel.app",
     linkGithub: "https://github.com/faukirijatul/blog-mern-ts.git",
     mainStack: [
+      "TypeScript",
       "React",
       "Redux Toolkit",
       "Tailwind CSS",
@@ -29,6 +30,7 @@ const projects = [
     tool: [
       "TypeScript",
       "React",
+      "CSS",
       "Tailwind CSS",
       "Redux Toolkit",
       "Express JS",
@@ -57,6 +59,7 @@ const projects = [
       "MongoDB",
     ],
     tool: [
+      "JavaScript",
       "React",
       "Tailwind CSS",
       "Daisy UI",
@@ -86,6 +89,7 @@ const projects = [
       "MongoDB",
     ],
     tool: [
+      "JavaScript",
       "React",
       "Tailwind CSS",
       "Redux Toolkit",
@@ -112,6 +116,7 @@ const projects = [
       "MongoDB",
     ],
     tool: [
+      "JavaScript",
       "React",
       "Tailwind CSS",
       "Express JS",
@@ -132,6 +137,7 @@ const projects = [
     linkGithub: "https://github.com/faukiofficial/JagoCatat.git",
     mainStack: ["React", "Tailwind CSS", "Express JS", "MongoDB"],
     tool: [
+      "JavaScript",
       "React",
       "Tailwind CSS",
       "Express JS",
@@ -207,7 +213,14 @@ const projects = [
     linkGithub:
       "https://github.com/faukiofficial/event-ticket-booking-backend.git",
     mainStack: ["Express JS", "Node JS", "MongoDB", "Nodemailer"],
-    tool: ["Express JS", "Node JS", "MongoDB", "Nodemailer", "Json Web Token"],
+    tool: [
+      "JavaScript",
+      "Express JS",
+      "Node JS",
+      "MongoDB",
+      "Nodemailer",
+      "Json Web Token",
+    ],
   },
   {
     _id: "45654",
@@ -228,7 +241,7 @@ const projects = [
     linkDemo: "https://faukirijatul.vercel.app",
     linkGithub: "https://github.com/faukiofficial/faukirijatul.git",
     mainStack: ["React", "Tailwind CSS", "Context API"],
-    tool: ["React", "Tailwind CSS", "Context API"],
+    tool: ["JavaScript", "React", "Tailwind CSS", "Context API"],
   },
 ];
 

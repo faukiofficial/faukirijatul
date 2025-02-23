@@ -30,20 +30,37 @@ const About = () => {
           Programming Languages, Frameworks & Tools
         </h4>
 
-        <div className="flex justify-center flex-wrap gap-2">
-          {stackData.map((stack) => (
+        <div className="flex justify-center flex-wrap gap-5 items-center">
+          {stackData.map((data) => (
             <div
-              key={stack.id}
-              className="flex flex-col items-center justify-between gap-1 min-w-[100px] border hover:border-blue-400 hover:bg-gray-100 rounded-md p-2 cursor-pointer"
-              onClick={() => {
-                setSelectedTool(stack.title);
-                navigate("/all-projects");
-              }}
+              key={data.title}
+              className="flex flex-col items-center border border-gray-400/40 rounded-md p-4"
             >
-              <img src={stack.icon} alt={stack.title} height={50} width={50} />
-              <p className="text-center text-gray-900 text-sm 800px:text-base">
-                {stack.title}
-              </p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                {data.title}
+              </h3>
+              <div className="flex flex-wrap gap-2 justify-center">
+                {data.stacks.map((stack) => (
+                  <div
+                    key={stack.id}
+                    className="flex flex-col items-center justify-between gap-1 min-w-[100px] border hover:border-blue-400 hover:bg-gray-100 rounded-md p-2 cursor-pointer"
+                    onClick={() => {
+                      setSelectedTool(stack.title);
+                      navigate("/all-projects");
+                    }}
+                  >
+                    <img
+                      src={stack.icon}
+                      alt={stack.title}
+                      height={50}
+                      width={50}
+                    />
+                    <p className="text-center text-gray-900 text-sm 800px:text-base">
+                      {stack.title}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
           ))}
         </div>
