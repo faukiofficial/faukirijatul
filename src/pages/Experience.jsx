@@ -24,15 +24,13 @@ const Experience = () => {
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             icon={<FaComputer />}
           >
-            <h3 className="vertical-timeline-element-title text-2xl font-semibold text-gray-900">
-              Fullstack Web Developer Bootcamp
+            <h3 className="ertical-timeline-element-title text-2xl font-semibold text-gray-900">
+              Fullstack Web Developer
             </h3>
             <h4 className="vertical-timeline-element-subtitle font-semibold text-gray-900">
-              Eduwork, Online
+              Eduwork, Remote
             </h4>
-            <ul>
-              <li className="text-base">Fullstack MERN</li>
-            </ul>
+            <p className="text-base">MERN Stack</p>
           </VerticalTimelineElement>
 
           <VerticalTimelineElement
@@ -45,7 +43,7 @@ const Experience = () => {
               Bookstore Manager
             </h3>
             <h4 className="vertical-timeline-element-subtitle font-semibold text-gray-900">
-              Lapak Mumtaz, Bogor, ID
+              Lapak Mumtaz, Bogor, Indonesia
             </h4>
             <p className="text-base">Leadership, Digital Marketing</p>
           </VerticalTimelineElement>
@@ -59,7 +57,7 @@ const Experience = () => {
               Web Developer Intership
             </h3>
             <h4 className="vertical-timeline-element-subtitle font-semibold text-gray-900">
-              IPB University, Bogor, ID
+              IPB University, Bogor, Indonesia
             </h4>
             <p className="text-base">PHP, Laravel, MySQL, Team Work</p>
           </VerticalTimelineElement>
@@ -73,7 +71,7 @@ const Experience = () => {
               Bachelors Degree : Computer Science
             </h3>
             <h4 className="vertical-timeline-element-subtitle font-semibold text-gray-900">
-              IPB University, Bogor, ID
+              IPB University, Bogor, Indonesia
             </h4>
             <p className="text-base">
               Team Work, Time Management, Communication, Basic Programming, Web
