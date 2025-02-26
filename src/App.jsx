@@ -7,23 +7,22 @@ import ScrollToTopButton from "./components/ScrollToTopButton"; // Import kompon
 import AllProjectsPage from "./pages/AllProjectsPage";
 import ScrollToTop from "./components/ScrollToTop";
 
-
 function App() {
   return (
-      <BrowserRouter>
-        <div className="relative min-h-screen">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/project/:id" element={<DetailPortfolio />} />
-            <Route path="/page-not-found" element={<PageNotFound />} />
-            <Route path="/experiences" element={<Experience />} />
-            <Route path="/all-projects" element={<AllProjectsPage />} />
-            <Route path="*" element={<PageNotFound />} />
-          </Routes>
-          <ScrollToTop />
-          <ScrollToTopButton />
-        </div>
-      </BrowserRouter>
+    <BrowserRouter>
+      <div className="relative min-h-screen">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/project/:id" element={<DetailPortfolio />} />
+          <Route path="/page-not-found" element={<PageNotFound />} />
+          <Route path="/experiences" element={<Experience />} />
+          <Route path="/all-projects/:title?" element={<AllProjectsPage />} />
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
+        <ScrollToTop />
+        <ScrollToTopButton />
+      </div>
+    </BrowserRouter>
   );
 }
 

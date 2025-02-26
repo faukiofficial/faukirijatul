@@ -1,15 +1,29 @@
-import { useContext, useState } from "react";
+import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ScrollToTop from "../components/ScrollToTop";
 import Select from "react-select";
 import projects from "../data/dataProject";
-import { AppContext } from "../context/AppContext";
-import { Link } from "react-router-dom";
+// import { AppContext } from "../context/AppContext";
+import { Link, useNavigate, useParams } from "react-router-dom";
+import { useEffect } from "react";
 
 const AllProjectsPage = () => {
   const [searchQuery, setSearchQuery] = useState("");
-  const { selectedTool, setSelectedTool } = useContext(AppContext);
+  // const { selectedTool, setSelectedTool } = useContext(AppContext);
+  const [selectedTool, setSelectedTool] = useState(null);
+
+  const navigate = useNavigate();
+
+  const { title } = useParams();
+
+  useEffect(() => {
+    if (title) {
+      setSelectedTool(title);
+    } else {
+      setSelectedTool(null);
+    }
+  }, [title]);
 
   const allTools = Array.from(
     new Set(projects.flatMap((project) => project.tool))
@@ -37,7 +51,8 @@ const AllProjectsPage = () => {
   };
 
   const handleToolChange = (selectedOption) => {
-    setSelectedTool(selectedOption ? selectedOption.value : null);
+    const toolValue = selectedOption ? selectedOption.value : "";
+    navigate(`/all-projects/${toolValue}`, { replace: true });
   };
 
   return (
@@ -68,7 +83,7 @@ const AllProjectsPage = () => {
                 (option) => option.value === selectedTool
               )}
               isClearable
-              placeholder="Filter by tool..."
+              placeholder="Filter by stack..."
               className="w-full md:w-60"
             />
           </div>

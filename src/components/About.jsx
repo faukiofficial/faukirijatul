@@ -1,10 +1,10 @@
-import { useContext } from "react";
-import { AppContext } from "../context/AppContext";
+// import { useContext } from "react";
+// import { AppContext } from "../context/AppContext";
 import { useNavigate } from "react-router-dom";
 import { stackData } from "../data/stackData";
 
 const About = () => {
-  const { setSelectedTool } = useContext(AppContext);
+  // const { setSelectedTool } = useContext(AppContext);
   const navigate = useNavigate();
 
   return (
@@ -45,8 +45,8 @@ const About = () => {
                     key={stack.id}
                     className="flex flex-col items-center justify-between gap-1 min-w-[100px] border hover:border-blue-400 hover:bg-gray-100 rounded-md p-2 cursor-pointer"
                     onClick={() => {
-                      setSelectedTool(stack.title);
-                      navigate("/all-projects");
+                      // setSelectedTool(stack.title);
+                      navigate(`/all-projects/${stack.title}`);
                     }}
                   >
                     <img
