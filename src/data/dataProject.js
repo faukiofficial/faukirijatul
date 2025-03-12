@@ -164,6 +164,8 @@ const projects = [
     linkGithub: "https://github.com/faukiofficial/blog-mern-ts.git",
     mainStack: ["TypeScript", "Express JS", "Node JS", "MongoDB", "Redis"],
     tool: [
+      "HTML",
+      "CSS",
       "TypeScript",
       "Express JS",
       "Node JS",
@@ -191,6 +193,8 @@ const projects = [
       "Redis",
     ],
     tool: [
+      "HTML",
+      "CSS",
       "TypeScript",
       "React",
       "Tailwind CSS",
@@ -215,6 +219,8 @@ const projects = [
       "https://github.com/faukiofficial/event-ticket-booking-backend.git",
     mainStack: ["Express JS", "Node JS", "MongoDB", "Nodemailer"],
     tool: [
+      "HTML",
+      "CSS",
       "JavaScript",
       "Express JS",
       "Node JS",
@@ -230,7 +236,7 @@ const projects = [
     linkDemo: "",
     linkGithub: "https://github.com/faukirijatul/todolist-laravel11.git",
     mainStack: ["PHP", "Laravel", "MySQL", "Bootstrap"],
-    tool: ["PHP", "Laravel", "MySQL", "Bootstrap"],
+    tool: ["PHP", "Laravel", "MySQL", "HTML", "Bootstrap"],
   },
   {
     _id: "45654",
