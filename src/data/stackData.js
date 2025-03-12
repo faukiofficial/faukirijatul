@@ -2,6 +2,7 @@ import html from "./../assets/icons/html.svg";
 import css from "./../assets/icons/css.svg";
 import javascript from "./../assets/icons/javascript.svg";
 import typescript from "./../assets/icons/typescript.svg";
+import php from "./../assets/icons/php.svg";
 import sql from "./../assets/icons/sql.svg";
 import bootstrap from "./../assets/icons/bootstrap.svg";
 import tailwindCSS from "./../assets/icons/tailwind-css.svg";
@@ -16,6 +17,7 @@ import zustand from "./../assets/icons/zustand.svg";
 import nodejs from "./../assets/icons/nodejs.svg";
 import expressjs from "./../assets/icons/expressjs.svg";
 import nestjs from "./../assets/icons/nestjs.svg";
+import laravel from "./../assets/icons/laravel.svg";
 import mysql from "./../assets/icons/mysql.svg";
 import mongodb from "./../assets/icons/mongodb.svg";
 import redis from "./../assets/icons/redis.svg";
@@ -52,6 +54,11 @@ export const stackData = [
         id: "typescript",
         icon: typescript,
         title: "TypeScript",
+      },
+      {
+        id: "php",
+        icon: php,
+        title: "PHP",
       },
       {
         id: "sql",
@@ -102,6 +109,11 @@ export const stackData = [
         id: "nestjs",
         icon: nestjs,
         title: "Nest JS",
+      },
+      {
+        id: "laravel",
+        icon: laravel,
+        title: "Laravel",
       },
     ],
   },

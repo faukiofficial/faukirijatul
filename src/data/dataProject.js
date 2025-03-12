@@ -9,6 +9,7 @@ import adminDashboard from "../assets/projects/admindashboard.svg";
 import blogBackendRedis from "../assets/projects/blog-backend-redis.svg";
 import learny from "../assets/projects/learny.svg";
 import faukiblog from "../assets/projects/faukiblog.svg";
+import todolistLaravel from "../assets/projects/todolist-laravel.svg";
 
 const projects = [
   {
@@ -221,6 +222,15 @@ const projects = [
       "Nodemailer",
       "Json Web Token",
     ],
+  },
+  {
+    _id: "4880354",
+    title: "Simple Todo List",
+    image: todolistLaravel,
+    linkDemo: "",
+    linkGithub: "https://github.com/faukirijatul/todolist-laravel11.git",
+    mainStack: ["PHP", "Laravel", "MySQL", "Bootstrap"],
+    tool: ["PHP", "Laravel", "MySQL", "Bootstrap"],
   },
   {
     _id: "45654",
