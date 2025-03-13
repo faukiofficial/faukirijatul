@@ -16,7 +16,6 @@ const projects = [
   {
     _id: "387960",
     title: "Auth System - Blog Web App",
-    description: "This fullstack .",
     image: authsystem,
     linkDemo: "",
     linkGithub:
