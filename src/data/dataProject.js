@@ -15,7 +15,7 @@ import todolistLaravel from "../assets/projects/todolist-laravel.svg";
 const projects = [
   {
     _id: "387960",
-    title: "Auth System - Blog Web App",
+    title: "Auth System - Web App",
     image: authsystem,
     linkDemo: "",
     linkGithub:
