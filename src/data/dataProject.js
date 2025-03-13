@@ -9,9 +9,43 @@ import adminDashboard from "../assets/projects/admindashboard.svg";
 import blogBackendRedis from "../assets/projects/blog-backend-redis.svg";
 import learny from "../assets/projects/learny.svg";
 import faukiblog from "../assets/projects/faukiblog.svg";
+import authsystem from "../assets/projects/auth-system.svg";
 import todolistLaravel from "../assets/projects/todolist-laravel.svg";
 
 const projects = [
+  {
+    _id: "387960",
+    title: "Auth System - Blog Web App",
+    description: "This fullstack .",
+    image: authsystem,
+    linkDemo: "",
+    linkGithub:
+      "https://github.com/faukirijatul/express-nextjs-ts-authsystem.git",
+    mainStack: [
+      "TypeScript",
+      "Next JS",
+      "Redux Toolkit",
+      "Tailwind CSS",
+      "Express JS",
+      "MySQL",
+    ],
+    tool: [
+      "TypeScript",
+      "Next JS",
+      "CSS",
+      "HTML",
+      "Tailwind CSS",
+      "Redux Toolkit",
+      "Express JS",
+      "Node JS",
+      "Cloudinary",
+      "OAuth",
+      "Next Auth",
+      "MySQL",
+      "Prisma",
+      "Json Web Token",
+    ],
+  },
   {
     _id: "57960",
     title: "Fauki - Blog Web App",
