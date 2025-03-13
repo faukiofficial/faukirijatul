@@ -42,6 +42,7 @@ const projects = [
       "Next Auth",
       "MySQL",
       "Prisma",
+      "Jest",
       "Json Web Token",
     ],
   },
