@@ -31,13 +31,13 @@ const DetailProject = () => {
 
   const handlePrevClick = () => {
     if (currentIndex > 0) {
-      navigate(`/project/${projects[currentIndex - 1]._id}`);
+      navigate(`/project/${projects[currentIndex - 1]._id}`, { replace: true });
     }
   };
 
   const handleNextClick = () => {
     if (currentIndex < projects.length - 1) {
-      navigate(`/project/${projects[currentIndex + 1]._id}`);
+      navigate(`/project/${projects[currentIndex + 1]._id}`, { replace: true });
     }
   };
 
