@@ -2,6 +2,7 @@
 // import { AppContext } from "../context/AppContext";
 import { useNavigate } from "react-router-dom";
 import { stackData } from "../data/stackData";
+import { allTools } from "../data/constant";
 
 const About = () => {
   // const { setSelectedTool } = useContext(AppContext);
@@ -43,11 +44,19 @@ const About = () => {
                 {data.stacks.map((stack) => (
                   <div
                     key={stack.id}
-                    className="flex flex-col items-center justify-between gap-1 min-w-[100px] border hover:border-blue-400 hover:bg-gray-100 rounded-md p-2 cursor-pointer"
-                    onClick={() => {
-                      // setSelectedTool(stack.title);
-                      navigate(`/all-projects/${stack.title}`);
-                    }}
+                    className={`flex flex-col items-center justify-between gap-1 min-w-[100px] border hover:border-blue-400 hover:bg-gray-100 rounded-md p-2 ${
+                      allTools.includes(stack.title)
+                        ? "cursor-pointer"
+                        : "cursor-enabled"
+                    }`}
+                    onClick={
+                      allTools.includes(stack.title)
+                        ? () => {
+                            // setSelectedTool(stack.title);
+                            navigate(`/all-projects/${stack.title}`);
+                          }
+                        : null
+                    }
                   >
                     <img
                       src={stack.icon}

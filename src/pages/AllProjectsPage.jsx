@@ -7,6 +7,7 @@ import projects from "../data/dataProject";
 // import { AppContext } from "../context/AppContext";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { useEffect } from "react";
+import { allTools } from "../data/constant";
 
 const AllProjectsPage = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -24,10 +25,6 @@ const AllProjectsPage = () => {
       setSelectedTool(null);
     }
   }, [title]);
-
-  const allTools = Array.from(
-    new Set(projects.flatMap((project) => project.tool))
-  );
 
   const toolOptions = allTools
     .map((tool) => ({
