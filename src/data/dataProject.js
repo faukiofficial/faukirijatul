@@ -17,7 +17,7 @@ const projects = [
     _id: "387960",
     title: "Auth System - Web App",
     image: authsystem,
-    linkDemo: "",
+    linkDemo: "https://authsystem-sand.vercel.app",
     linkGithub:
       "https://github.com/faukirijatul/express-nextjs-ts-authsystem.git",
     mainStack: [
@@ -44,6 +44,9 @@ const projects = [
       "Prisma",
       "Jest",
       "Json Web Token",
+      "Nodemailer",
+      "Railway",
+      "Vercel",
     ],
   },
   {

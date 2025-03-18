@@ -28,6 +28,7 @@ import cloudinary from "./../assets/icons/cloudinary.svg";
 import github from "./../assets/icons/github.svg";
 import git from "./../assets/icons/git.svg";
 import vercel from "./../assets/icons/vercel.svg";
+import railway from "./../assets/icons/railway.png";
 import vscode from "./../assets/icons/vscode.svg";
 import postman from "./../assets/icons/postman.svg";
 
@@ -200,6 +201,11 @@ export const stackData = [
         id: "vercel",
         icon: vercel,
         title: "Vercel",
+      },
+      {
+        id: "railway",
+        icon: railway,
+        title: "Railway",
       },
     ],
   },
