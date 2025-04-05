@@ -18,7 +18,7 @@ const About = () => {
           About
         </h3>
         <p className="text-center text-gray-900 text-lg 800px:text-2xl">
-          Gained experience in programming through academic projects and
+          Gained experience in programming through building many projects and
           hands-on web development. Worked on several full-stack projects,
           building applications with Node.js, React, and Next.js. Passionate
           about full-stack development, with a focus on creating impactful
