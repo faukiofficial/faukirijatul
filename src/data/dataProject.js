@@ -9,10 +9,45 @@ import adminDashboard from "../assets/projects/admindashboard.svg";
 import blogBackendRedis from "../assets/projects/blog-backend-redis.svg";
 import learny from "../assets/projects/learny.svg";
 import faukiblog from "../assets/projects/faukiblog.svg";
+import tokobaju from "../assets/projects/tokobaju.svg";
 import authsystem from "../assets/projects/auth-system.svg";
 import todolistLaravel from "../assets/projects/todolist-laravel.svg";
 
 const projects = [
+  {
+    _id: "3876800",
+    title: "Tokobaju (E-Commerce) - Web App",
+    image: tokobaju,
+    linkDemo: "https://tokobaju-nine.vercel.app",
+    linkGithub:
+      "https://github.com/faukirijatul/ecommerce-frontend-react",
+    mainStack: [
+      "JavaScript",
+      "React",
+      "Redux Toolkit",
+      "Stripe",
+      "Express JS",
+      "MongoDB",
+    ],
+    tool: [
+      "JavaScript",
+      "React",
+      "CSS",
+      "HTML",
+      "Tailwind CSS",
+      "Context API",
+      "Redux Toolkit",
+      "Express JS",
+      "Node JS",
+      "Cloudinary",
+      "Stripe",
+      "MongoDB",
+      "Mongoose",
+      "Json Web Token",
+      "Nodemailer",
+      "Vercel",
+    ],
+  },
   {
     _id: "387960",
     title: "Auth System - Web App",
@@ -225,6 +260,7 @@ const projects = [
       "React",
       "Tailwind CSS",
       "Redux Toolkit",
+      "Midtrans",
       "Express JS",
       "MongoDB",
       "Redis",
@@ -239,6 +275,7 @@ const projects = [
       "Express JS",
       "Node JS",
       "Cloudinary",
+      "Midtrans",
       "MongoDB",
       "Redis",
       "Nodemailer",

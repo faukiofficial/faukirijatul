@@ -6,7 +6,7 @@ import typescript from "./../assets/icons/typescript.svg";
 import sql from "./../assets/icons/sql.svg";
 import bootstrap from "./../assets/icons/bootstrap.svg";
 import tailwindCSS from "./../assets/icons/tailwind-css.svg";
-import vite from "./../assets/icons/vite.svg";
+// import vite from "./../assets/icons/vite.svg";
 import vitest from "./../assets/icons/vitest.svg";
 import jest from "./../assets/icons/jest.svg";
 import react from "./../assets/icons/react.svg";
@@ -24,6 +24,8 @@ import redis from "./../assets/icons/redis.svg";
 import mongoose from "./../assets/icons/mongoose.svg";
 import sequelize from "./../assets/icons/sequelize.svg";
 import prisma from "./../assets/icons/prisma.svg";
+import stripe from "./../assets/icons/stripe.svg";
+import midtrans from "./../assets/icons/midtrans.svg";
 import cloudinary from "./../assets/icons/cloudinary.svg";
 import github from "./../assets/icons/github.svg";
 import git from "./../assets/icons/git.svg";
@@ -80,11 +82,6 @@ export const stackData = [
         id: "tailwindcss",
         icon: tailwindCSS,
         title: "Tailwind CSS",
-      },
-      {
-        id: "vite",
-        icon: vite,
-        title: "Vite",
       },
       {
         id: "react",
@@ -171,6 +168,21 @@ export const stackData = [
         id: "zustand",
         icon: zustand,
         title: "Zustand",
+      },
+    ],
+  },
+  {
+    title: "Payment Gateway",
+    stacks: [
+      {
+        id: "stripe",
+        icon: stripe,
+        title: "Stripe",
+      },
+      {
+        id: "midtrans",
+        icon: midtrans,
+        title: "Midtrans",
       },
     ],
   },
