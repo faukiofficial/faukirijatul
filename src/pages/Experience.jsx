@@ -20,7 +20,22 @@ const Experience = () => {
         <VerticalTimeline>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2024"
+            date="2025 - Now"
+            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+            icon={<FaComputer />}
+          >
+            <h3 className="ertical-timeline-element-title text-2xl font-semibold text-gray-900">
+              Frontend Engineer
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle font-semibold text-gray-900">
+              Antara ETP, Remote
+            </h4>
+            <p className="text-base">Next JS, Teamwork</p>
+          </VerticalTimelineElement>
+
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="2024 - 2025"
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             icon={<FaComputer />}
           >
@@ -43,7 +58,7 @@ const Experience = () => {
               Bookstore Manager
             </h3>
             <h4 className="vertical-timeline-element-subtitle font-semibold text-gray-900">
-              Lapak Mumtaz, Bogor, Indonesia
+              Lapak Mumtaz, Bogor, Indonesia (Hybrid)
             </h4>
             <p className="text-base">Leadership, Digital Marketing</p>
           </VerticalTimelineElement>
