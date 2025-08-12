@@ -12,8 +12,56 @@ import faukiblog from "../assets/projects/faukiblog.svg";
 import tokobaju from "../assets/projects/tokobaju.svg";
 import authsystem from "../assets/projects/auth-system.svg";
 import todolistLaravel from "../assets/projects/todolist-laravel.svg";
+import legalize from "../assets/projects/legalize.svg";
+import docduit from "../assets/projects/docduit.svg";
 
 const projects = [
+  {
+    _id: "98374324",
+    title: "Docduit - Web App",
+    image: docduit,
+    linkDemo: "https://docduit.com",
+    linkGithub:
+      "",
+    mainStack: [
+      "TypeScript",
+      "Next JS",
+      "Radix UI",
+      "Tailwind CSS",
+      "SWR",
+      "React Query",
+    ],
+    tool: [
+      "TypeScript",
+      "Next JS",
+      "Radix UI",
+      "Tailwind CSS",
+      "SWR",
+      "React Query",
+    ],
+  },
+  {
+    _id: "98374921",
+    title: "Legal-ize - Web App",
+    image: legalize,
+    linkDemo: "https://legal-ize.com",
+    linkGithub:
+      "",
+    mainStack: [
+      "TypeScript",
+      "Next JS",
+      "Radix UI",
+      "Tailwind CSS",
+      "SWR",
+    ],
+    tool: [
+      "TypeScript",
+      "Next JS",
+      "Radix UI",
+      "Tailwind CSS",
+      "SWR",
+    ],
+  },
   {
     _id: "3876800",
     title: "Tokobaju (E-Commerce) - Web App",
