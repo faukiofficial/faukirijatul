@@ -14,6 +14,7 @@ import authsystem from "../assets/projects/auth-system.svg";
 import todolistLaravel from "../assets/projects/todolist-laravel.svg";
 import legalize from "../assets/projects/legalize.svg";
 import docduit from "../assets/projects/docduit.svg";
+import todoReactNative from "../assets/projects/todo-react-native.svg";
 
 const projects = [
   {
@@ -94,6 +95,25 @@ const projects = [
       "Json Web Token",
       "Nodemailer",
       "Vercel",
+    ],
+  },
+  {
+    _id: "98632893",
+    title: "Todo App - Mobile App",
+    image: todoReactNative,
+    linkDemo: "",
+    description: "A simple todo app using React Native and Convex with Dark Mode and Light Mode.",
+    linkGithub:
+      "https://github.com/faukirijatul/todo-app-react-native-convex.git",
+    mainStack: [
+      "TypeScript",
+      "React Native",
+      "Convex",
+    ],
+    tool: [
+      "TypeScript",
+      "React Native",
+      "Convex",
     ],
   },
   {
