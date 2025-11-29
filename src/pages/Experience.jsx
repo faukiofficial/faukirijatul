@@ -30,7 +30,7 @@ const Experience = () => {
             <h4 className="vertical-timeline-element-subtitle font-semibold text-gray-900">
               Antara ETP, Remote
             </h4>
-            <p className="text-base">Next JS, Teamwork</p>
+            <p className="text-base">Next JS, React JS, TypeScript, Teamwork</p>
           </VerticalTimelineElement>
 
           <VerticalTimelineElement

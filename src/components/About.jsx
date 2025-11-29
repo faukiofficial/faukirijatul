@@ -18,14 +18,14 @@ const About = () => {
           About
         </h3>
         <p className="text-center text-gray-900 text-lg 800px:text-2xl">
-          Gained experience in programming through building many projects and
-          hands-on web development. Worked on several full-stack projects,
-          building applications with Node.js, React, and Next.js. Passionate
-          about full-stack development, with a focus on creating impactful
-          digital solutions that enhance user experience and drive business
-          growth. Excited to contribute to innovative teams and projects that
-          push the boundaries of web technology, particularly in full-stack
-          development.
+          Developed scalable, high-performance web applications as a Full-Stack
+          Developer for over 2 years, specializing in React.js and Next.js for
+          dynamic frontends and seamless user experiences. Built robust backend
+          systems and RESTful APIs using Express.js professionally for more than
+          1 year. Excelled in problem-solving and debugging, quickly resolved
+          complex technical issues in both greenfield and legacy codebases, and
+          delivered clean, maintainable solutions that enhanced performance and
+          supported business growth.
         </p>
         <h4 className="text-center text-3xl font-semibold mt-8 mb-5 uppercase text-gray-900">
           Programming Languages, Frameworks & Tools
