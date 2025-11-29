@@ -38,14 +38,14 @@ const Header = () => {
             >
               <SlSocialLinkedin className="w-6 h-6 800px:w-8 800px:h-8" />
             </a>
-            <a
+            {/* <a
               href="https://github.com/faukiofficial"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-blue-400 mx-4"
             >
               <FaGithub className="w-6 h-6 800px:w-8 800px:h-8" />
-            </a>
+            </a> */}
             <a
               href="https://github.com/faukirijatul"
               target="_blank"
