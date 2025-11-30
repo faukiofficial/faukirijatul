@@ -1,4 +1,4 @@
-import personalPortfolio from "../assets/projects/faukirijatul.svg";
+// import personalPortfolio from "../assets/projects/faukirijatul.svg";
 import jagoCatat from "../assets/projects/jagocatat.svg";
 import apaKabar from "../assets/projects/apakabar.svg";
 import tokoKita from "../assets/projects/Tokokita.svg";
@@ -11,10 +11,10 @@ import learny from "../assets/projects/learny.svg";
 import faukiblog from "../assets/projects/faukiblog.svg";
 import tokobaju from "../assets/projects/tokobaju.svg";
 import authsystem from "../assets/projects/auth-system.svg";
-import todolistLaravel from "../assets/projects/todolist-laravel.svg";
+// import todolistLaravel from "../assets/projects/todolist-laravel.svg";
 import legalize from "../assets/projects/legalize.svg";
 import docduit from "../assets/projects/docduit.svg";
-import todoReactNative from "../assets/projects/todo-react-native.svg";
+// import todoReactNative from "../assets/projects/todo-react-native.svg";
 
 const projects = [
   {
@@ -97,25 +97,25 @@ const projects = [
       "Vercel",
     ],
   },
-  {
-    _id: "98632893",
-    title: "Todo App - Mobile App",
-    image: todoReactNative,
-    linkDemo: "",
-    description: "A simple todo app using React Native and Convex with Dark Mode and Light Mode.",
-    linkGithub:
-      "https://github.com/faukirijatul/todo-app-react-native-convex.git",
-    mainStack: [
-      "TypeScript",
-      "React Native",
-      "Convex",
-    ],
-    tool: [
-      "TypeScript",
-      "React Native",
-      "Convex",
-    ],
-  },
+  // {
+  //   _id: "98632893",
+  //   title: "Todo App - Mobile App",
+  //   image: todoReactNative,
+  //   linkDemo: "",
+  //   description: "A simple todo app using React Native and Convex with Dark Mode and Light Mode.",
+  //   linkGithub:
+  //     "https://github.com/faukirijatul/todo-app-react-native-convex.git",
+  //   mainStack: [
+  //     "TypeScript",
+  //     "React Native",
+  //     "Convex",
+  //   ],
+  //   tool: [
+  //     "TypeScript",
+  //     "React Native",
+  //     "Convex",
+  //   ],
+  // },
   {
     _id: "387960",
     title: "Auth System - Web App",
@@ -158,7 +158,7 @@ const projects = [
     description:
       "This fullstack blogging application allows users to create rich text posts, like, comment, and save/bookmark blogs. Built with React.js, Vite, and TypeScript on the frontend, and Express.js with MongoDB on the backend. Styled with Tailwind CSS for a responsive UI.",
     image: faukiblog,
-    linkDemo: "https://fauki.vercel.app",
+    linkDemo: "https://blog.fauki.com",
     linkGithub: "https://github.com/faukirijatul/blog-mern-ts.git",
     mainStack: [
       "TypeScript",
@@ -371,15 +371,15 @@ const projects = [
       "Json Web Token",
     ],
   },
-  {
-    _id: "4880354",
-    title: "Simple Todo List",
-    image: todolistLaravel,
-    linkDemo: "",
-    linkGithub: "https://github.com/faukirijatul/todolist-laravel11.git",
-    mainStack: ["PHP", "Laravel", "MySQL", "Bootstrap"],
-    tool: ["PHP", "Laravel", "MySQL", "HTML", "Bootstrap"],
-  },
+  // {
+  //   _id: "4880354",
+  //   title: "Simple Todo List",
+  //   image: todolistLaravel,
+  //   linkDemo: "",
+  //   linkGithub: "https://github.com/faukirijatul/todolist-laravel11.git",
+  //   mainStack: ["PHP", "Laravel", "MySQL", "Bootstrap"],
+  //   tool: ["PHP", "Laravel", "MySQL", "HTML", "Bootstrap"],
+  // },
   {
     _id: "45654",
     title: "Bebo Tech (Figma Slicing) - Web App",
@@ -390,17 +390,17 @@ const projects = [
     mainStack: ["React", "TypeScript", "Tailwind CSS", "Figma"],
     tool: ["React", "Tailwind CSS", "TypeScript", "Figma"],
   },
-  {
-    _id: "64565",
-    title: "Personal Portfolio Web App",
-    description:
-      "A fullstack website to showcase a personal description. Highlights skills and experiences using a sleek and user-friendly interface. Designed with modern web technologies, it ensures responsiveness and accessibility.",
-    image: personalPortfolio,
-    linkDemo: "https://faukirijatul.vercel.app",
-    linkGithub: "https://github.com/faukiofficial/faukirijatul.git",
-    mainStack: ["React", "Tailwind CSS", "Context API"],
-    tool: ["JavaScript", "React", "Tailwind CSS", "Context API"],
-  },
+  // {
+  //   _id: "64565",
+  //   title: "Personal Portfolio Web App",
+  //   description:
+  //     "A fullstack website to showcase a personal description. Highlights skills and experiences using a sleek and user-friendly interface. Designed with modern web technologies, it ensures responsiveness and accessibility.",
+  //   image: personalPortfolio,
+  //   linkDemo: "https://faukirijatul.vercel.app",
+  //   linkGithub: "https://github.com/faukiofficial/faukirijatul.git",
+  //   mainStack: ["React", "Tailwind CSS", "Context API"],
+  //   tool: ["JavaScript", "React", "Tailwind CSS", "Context API"],
+  // },
 ];
 
 export default projects;
