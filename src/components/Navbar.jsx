@@ -65,7 +65,7 @@ const Navbar = () => {
                 Experiences
               </Link>
               <a
-                href="https://fauki.vercel.app"
+                href="https://blog.fauki.com/"
                 target="_blank"
                 className="hover:text-blue-400 transition-colors duration-200 px-3 py-2 rounded-md text-xl"
               >
