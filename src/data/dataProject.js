@@ -39,6 +39,7 @@ const projects = [
       "Tailwind CSS",
       "SWR",
       "React Query",
+      "Context API",
     ],
   },
   {
@@ -51,13 +52,14 @@ const projects = [
     mainStack: [
       "TypeScript",
       "Next JS",
-      "Radix UI",
+      "Zustand",
       "Tailwind CSS",
       "SWR",
     ],
     tool: [
       "TypeScript",
       "Next JS",
+      "Zustand",
       "Radix UI",
       "Tailwind CSS",
       "SWR",
