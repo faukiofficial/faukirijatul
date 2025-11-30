@@ -53,7 +53,7 @@ const projects = [
       "TypeScript",
       "Next JS",
       "Zustand",
-      "Tailwind CSS",
+      "Socket.io",
       "SWR",
     ],
     tool: [
@@ -63,6 +63,7 @@ const projects = [
       "Radix UI",
       "Tailwind CSS",
       "SWR",
+      "Socket.io",
     ],
   },
   {

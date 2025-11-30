@@ -33,6 +33,7 @@ import vercel from "./../assets/icons/vercel.svg";
 import railway from "./../assets/icons/railway.png";
 import vscode from "./../assets/icons/vscode.svg";
 import postman from "./../assets/icons/postman.svg";
+import socketio from "./../assets/icons/socketio.svg";
 
 export const stackData = [
   {
@@ -102,6 +103,11 @@ export const stackData = [
         id: "expressjs",
         icon: expressjs,
         title: "Express JS",
+      },
+      {
+        id: "socketio",
+        icon: socketio,
+        title: "Socket.io",
       },
       // {
       //   id: "nestjs",
