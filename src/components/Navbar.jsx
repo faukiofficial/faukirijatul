@@ -97,19 +97,22 @@ const Navbar = () => {
           <Link
             to="/all-projects"
             className="block px-3 py-2 rounded-md text-base hover:text-blue-400 transition-colors duration-200"
+            onClick={() => setIsMenuOpen(false)}
           >
             Projects
           </Link>
           <Link
             to="/experiences"
             className="block px-3 py-2 rounded-md text-base hover:text-blue-400 transition-colors duration-200"
+            onClick={() => setIsMenuOpen(false)}
           >
             Experiences
           </Link>
           <a
-            href="https://fauki.vercel.app"
+            href="https://blog.fauki.com/"
             target="_blank"
             className="block px-3 py-2 rounded-md text-base hover:text-blue-400 transition-colors duration-200"
+            onClick={() => setIsMenuOpen(false)}
           >
             Blog
           </a>
