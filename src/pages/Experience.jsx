@@ -55,7 +55,7 @@ const Experience = () => {
             icon={<FaBook />}
           >
             <h3 className="vertical-timeline-element-title text-2xl font-semibold text-gray-900">
-              Bookstore Manager
+              Digital Marketing Manager
             </h3>
             <h4 className="vertical-timeline-element-subtitle font-semibold text-gray-900">
               Lapak Mumtaz, Bogor, Indonesia (Hybrid)
