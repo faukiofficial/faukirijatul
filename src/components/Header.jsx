@@ -1,4 +1,4 @@
-import profilePicture from "../assets/profile3.png";
+import profilePicture from "../assets/profile.png";
 import { FaInstagram, FaWhatsapp, FaGithub } from "react-icons/fa";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { Link } from "react-router-dom";
