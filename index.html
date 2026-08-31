@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -62,34 +62,34 @@
       const startYear = 2023;
       const currentYear = new Date().getFullYear();
       const years = currentYear - startYear;
-      const experienceText = years >= 1 ? `${years}+ years` : "just started";
+      const experienceText = years >= 1 ? `${years}+ years` : 'just started';
 
-      document.title = "Fauki Rijatul H - Software Engineer";
+      document.title = 'Fauki Rijatul H - Software Engineer';
 
       document
         .querySelector('meta[name="description"]')
         .setAttribute(
-          "content",
-          `Fauki Rijatul H - Software Engineer specializing in React.js, Next.js & Express.js. ${experienceText} of experience building scalable web applications.`
+          'content',
+          `Fauki Rijatul H - Software Engineer specializing in React.js, Next.js & Express.js. ${experienceText} of experience building scalable web applications.`,
         );
 
       document
         .querySelector('meta[property="og:description"]')
         .setAttribute(
-          "content",
-          `Software Engineer | React · Next.js · Node.js | ${experienceText} of experience`
+          'content',
+          `Software Engineer | React · Next.js · Node.js | ${experienceText} of experience`,
         );
 
       document
         .querySelector('meta[name="twitter:description"]')
         .setAttribute(
-          "content",
-          `Software Engineer | React · Next.js · Node.js | ${experienceText} of experience`
+          'content',
+          `Software Engineer | React · Next.js · Node.js | ${experienceText} of experience`,
         );
     </script>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

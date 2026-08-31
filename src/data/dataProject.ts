@@ -1,24 +1,21 @@
-// import personalPortfolio from "../assets/projects/faukirijatul.svg";
-import jagoCatat from '../assets/projects/jagocatat.svg';
-import apaKabar from '../assets/projects/apakabar.svg';
-import tokoKita from '../assets/projects/Tokokita.svg';
-// import beboTech from '../assets/projects/bebotech.svg';
-import belaja from '../assets/projects/belaja.svg';
-import eventBookingBE from '../assets/projects/Event-Ticket-Booking-Backend.svg';
-import adminDashboard from '../assets/projects/admindashboard.svg';
-import blogBackendRedis from '../assets/projects/blog-backend-redis.svg';
-import learny from '../assets/projects/learny.svg';
-import faukiblog from '../assets/projects/faukiblog.svg';
-import tokobaju from '../assets/projects/tokobaju.svg';
-// import authsystem from '../assets/projects/auth-system.svg';
-// import todolistLaravel from "../assets/projects/todolist-laravel.svg";
-import legalize from '../assets/projects/legalize.svg';
-import docduit from '../assets/projects/docduit.svg';
-// import todoReactNative from "../assets/projects/todo-react-native.svg";
+import jagoCatat from '@/assets/projects/jagocatat.svg';
+import apaKabar from '@/assets/projects/apakabar.svg';
+import tokoKita from '@/assets/projects/Tokokita.svg';
+import belaja from '@/assets/projects/belaja.svg';
+import eventBookingBE from '@/assets/projects/Event-Ticket-Booking-Backend.svg';
+import adminDashboard from '@/assets/projects/admindashboard.svg';
+import blogBackendRedis from '@/assets/projects/blog-backend-redis.svg';
+import learny from '@/assets/projects/learny.svg';
+import faukiblog from '@/assets/projects/faukiblog.svg';
+import tokobaju from '@/assets/projects/tokobaju.svg';
+import legalize from '@/assets/projects/legalize.svg';
+import docduit from '@/assets/projects/docduit.svg';
 
-const projects = [
+import type { ProjectItem } from '@/types/project';
+
+export const projects: ProjectItem[] = [
   {
-    _id: '98374324',
+    _id: 'docduit',
     title: 'Docduit - Web App',
     image: docduit,
     linkDemo: 'https://docduit.com',
@@ -42,7 +39,7 @@ const projects = [
     ],
   },
   {
-    _id: '98374921',
+    _id: 'legalize',
     title: 'Legal-ize - Web App',
     image: legalize,
     linkDemo: 'https://legal-ize.com',
@@ -59,7 +56,7 @@ const projects = [
     ],
   },
   {
-    _id: '3876800',
+    _id: 'tokobaju',
     title: 'Tokobaju (E-Commerce) - Web App',
     image: tokobaju,
     linkDemo: 'https://tokobaju-nine.vercel.app',
@@ -91,63 +88,8 @@ const projects = [
       'Vercel',
     ],
   },
-  // {
-  //   _id: "98632893",
-  //   title: "Todo App - Mobile App",
-  //   image: todoReactNative,
-  //   linkDemo: "",
-  //   description: "A simple todo app using React Native and Convex with Dark Mode and Light Mode.",
-  //   linkGithub:
-  //     "https://github.com/faukirijatul/todo-app-react-native-convex.git",
-  //   mainStack: [
-  //     "TypeScript",
-  //     "React Native",
-  //     "Convex",
-  //   ],
-  //   tool: [
-  //     "TypeScript",
-  //     "React Native",
-  //     "Convex",
-  //   ],
-  // },
-  // {
-  //   _id: "387960",
-  //   title: "Auth System - Web App",
-  //   image: authsystem,
-  //   linkDemo: "https://authsystem-sand.vercel.app",
-  //   linkGithub:
-  //     "https://github.com/faukirijatul/express-nextjs-ts-authsystem.git",
-  //   mainStack: [
-  //     "TypeScript",
-  //     "Next JS",
-  //     "Redux Toolkit",
-  //     "Tailwind CSS",
-  //     "Express JS",
-  //     "MySQL",
-  //   ],
-  //   tool: [
-  //     "TypeScript",
-  //     "Next JS",
-  //     "CSS",
-  //     "HTML",
-  //     "Tailwind CSS",
-  //     "Redux Toolkit",
-  //     "Express JS",
-  //     "Node JS",
-  //     "Cloudinary",
-  //     "OAuth",
-  //     "Next Auth",
-  //     "MySQL",
-  //     "Prisma",
-  //     "Jest",
-  //     "Json Web Token",
-  //     "Nodemailer",
-  //     "Railway",
-  //     "Vercel",
-  //   ],
-  // },
   {
-    _id: '57960',
+    _id: 'fauki-blog',
     title: 'Fauki - Blog Web App',
     description:
       'This fullstack blogging application allows users to create rich text posts, like, comment, and save/bookmark blogs. Built with React.js, Vite, and TypeScript on the frontend, and Express.js with MongoDB on the backend. Styled with Tailwind CSS for a responsive UI.',
@@ -177,7 +119,7 @@ const projects = [
     ],
   },
   {
-    _id: '79878',
+    _id: 'apakabar',
     title: 'Apakabar - Chat Web App',
     description:
       'This fullstack chat application enables real-time communication between users. It supports features like private messaging and online status indicators. The frontend is built with React.js and Vite, while the backend leverages Express.js and Socket.io for real-time interactions. MongoDB is used for data storage, and the UI is styled with Tailwind CSS and DaisyUI.',
@@ -209,7 +151,7 @@ const projects = [
     ],
   },
   {
-    _id: '33093',
+    _id: 'toko-kita',
     title: 'Toko Kita - ECommerce Web App',
     description:
       'This fullstack e-commerce application supports two roles: users and admins. Users can browse, shop, and make payments, while admins can manage products and handle shipment processing. The frontend is built with React.js and Vite, while the backend is powered by Express.js and MongoDB. Styling is handled using Tailwind CSS.',
@@ -236,7 +178,7 @@ const projects = [
     ],
   },
   {
-    _id: '53454',
+    _id: 'admin-dashboard',
     title: 'Admin Dashboard - Web App',
     description:
       'The backend is built using Express.js. Additional features include email functionality for OTP registration, forget password, change email, and change password, powered by Nodemailer. The frontend is developed using React.js. It includes state management with @reduxjs/toolkit. Styling is handled using Tailwind CSS, ensuring a responsive and modern user interface.',
@@ -263,7 +205,7 @@ const projects = [
     ],
   },
   {
-    _id: '31232',
+    _id: 'jago-catat',
     title: 'Jago Catat - Note Taking App',
     description:
       'This application is a fullstack platform for note-taking, allowing users to create, edit, and delete notes. Built with React.js and Vite for the frontend, and Express.js and MongoDB for the backend. Utilizes Tailwind CSS for a responsive and modern design.',
@@ -282,7 +224,7 @@ const projects = [
     ],
   },
   {
-    _id: '99232',
+    _id: 'learny',
     title: 'Learny - LMS Web App (Frontend)',
     image: learny,
     linkDemo: '',
@@ -291,7 +233,7 @@ const projects = [
     tool: ['React', 'TypeScript', 'Tailwind CSS', 'Context API', 'Clerk'],
   },
   {
-    _id: '87927',
+    _id: 'blog-backend',
     title: 'Blog Backend',
     image: blogBackendRedis,
     linkDemo: '',
@@ -312,7 +254,7 @@ const projects = [
     ],
   },
   {
-    _id: '67567',
+    _id: 'belaja',
     title: 'Belaja - LMS Web App',
     image: belaja,
     linkDemo: '',
@@ -345,7 +287,7 @@ const projects = [
     ],
   },
   {
-    _id: '45656',
+    _id: 'event-ticket-booking',
     title: 'Event Ticket Booking (Backend)',
     description:
       'The backend is built with Express.js, the database is managed using the Mongoose, and authentication is implemented with JsonWebToken. It includes mailing features for OTP registration and order notifications using Nodemailer and Mustache.',
@@ -365,36 +307,4 @@ const projects = [
       'Json Web Token',
     ],
   },
-  // {
-  //   _id: "4880354",
-  //   title: "Simple Todo List",
-  //   image: todolistLaravel,
-  //   linkDemo: "",
-  //   linkGithub: "https://github.com/faukirijatul/todolist-laravel11.git",
-  //   mainStack: ["PHP", "Laravel", "MySQL", "Bootstrap"],
-  //   tool: ["PHP", "Laravel", "MySQL", "HTML", "Bootstrap"],
-  // },
-  // {
-  //   _id: "45654",
-  //   title: "Bebo Tech (Figma Slicing) - Web App",
-  //   description: "Make a frontend based on Figma design.",
-  //   image: beboTech,
-  //   linkDemo: "https://bebotech.onrender.com/",
-  //   linkGithub: "https://github.com/faukiofficial/frontend-sisko.git",
-  //   mainStack: ["React", "TypeScript", "Tailwind CSS", "Figma"],
-  //   tool: ["React", "Tailwind CSS", "TypeScript", "Figma"],
-  // },
-  // {
-  //   _id: "64565",
-  //   title: "Personal Portfolio Web App",
-  //   description:
-  //     "A fullstack website to showcase a personal description. Highlights skills and experiences using a sleek and user-friendly interface. Designed with modern web technologies, it ensures responsiveness and accessibility.",
-  //   image: personalPortfolio,
-  //   linkDemo: "https://faukirijatul.vercel.app",
-  //   linkGithub: "https://github.com/faukiofficial/faukirijatul.git",
-  //   mainStack: ["React", "Tailwind CSS", "Context API"],
-  //   tool: ["JavaScript", "React", "Tailwind CSS", "Context API"],
-  // },
 ];
-
-export default projects;
