@@ -1,24 +1,50 @@
-import jagoCatat from '@/assets/projects/jagocatat.svg';
-import apaKabar from '@/assets/projects/apakabar.svg';
-import tokoKita from '@/assets/projects/Tokokita.svg';
-import belaja from '@/assets/projects/belaja.svg';
-import eventBookingBE from '@/assets/projects/Event-Ticket-Booking-Backend.svg';
-import adminDashboard from '@/assets/projects/admindashboard.svg';
-import blogBackendRedis from '@/assets/projects/blog-backend-redis.svg';
-import learny from '@/assets/projects/learny.svg';
-import faukiblog from '@/assets/projects/faukiblog.svg';
-import tokobaju from '@/assets/projects/tokobaju.svg';
-import legalize from '@/assets/projects/legalize.svg';
-import docduit from '@/assets/projects/docduit.svg';
+import legalize from '@/assets/projects/legalize.webp';
+import hikasir from '@/assets/projects/hikasir.webp';
+import docduit from '@/assets/projects/docduit.webp';
+import kodingup from '@/assets/projects/kodingup.webp';
+import tokobaju from '@/assets/projects/tokobaju.webp';
+import faukiblog from '@/assets/projects/faukiblog.webp';
+import tokoKita from '@/assets/projects/tokokita.webp';
 
 import type { ProjectItem } from '@/types/project';
 
 export const projects: ProjectItem[] = [
   {
+    _id: 'legalize',
+    title: 'Legal-ize',
+    image: legalize,
+    description:
+      'A web application for an information center on official Indonesian laws related to finance, such as presidential regulations, Bank Indonesia regulations, and others.',
+    linkDemo: '',
+    linkGithub: '',
+    mainStack: ['TypeScript', 'Next JS', 'Zustand', 'Socket.io', 'SWR'],
+    tool: [
+      'TypeScript',
+      'Next JS',
+      'Zustand',
+      'Radix UI',
+      'Tailwind CSS',
+      'SWR',
+      'Socket.io',
+    ],
+  },
+  {
+    _id: 'hi-kasir',
+    title: 'Hi-Kasir',
+    image: hikasir,
+    description:
+      'A POS (Point of Sale) application integrated with an Indonesian state-owned digital bank, featuring comprehensive management tools and intuitive data visualizations.',
+    linkDemo: '',
+    linkGithub: '',
+    mainStack: ['TypeScript', 'React JS', 'React Query', 'Chart JS'],
+    tool: ['TypeScript', 'React JS', 'React Query', 'Tailwind CSS', 'Chart JS'],
+  },
+  {
     _id: 'docduit',
     title: 'Docduit - Web App',
     image: docduit,
-    linkDemo: 'https://docduit.com',
+    description: 'A financial consultation web application integrated with AI',
+    linkDemo: '',
     linkGithub: '',
     mainStack: [
       'TypeScript',
@@ -39,28 +65,30 @@ export const projects: ProjectItem[] = [
     ],
   },
   {
-    _id: 'legalize',
-    title: 'Legal-ize - Web App',
-    image: legalize,
-    linkDemo: 'https://legal-ize.com',
+    _id: 'kodingup',
+    title: 'Koding Up - CMS',
+    image: kodingup,
+    description:
+      'A web-based Content Management System for Learning Management Systems to manage digital learning, including live class scheduling, assignments, automated attendance, and course materials efficiently.',
+    linkDemo: '',
     linkGithub: '',
-    mainStack: ['TypeScript', 'Next JS', 'Zustand', 'Socket.io', 'SWR'],
-    tool: [
+    mainStack: [
       'TypeScript',
-      'Next JS',
-      'Zustand',
+      'React JS',
       'Radix UI',
       'Tailwind CSS',
-      'SWR',
-      'Socket.io',
+      'React Query',
     ],
+    tool: ['TypeScript', 'Next JS', 'Radix UI', 'Tailwind CSS', 'React Query'],
   },
   {
     _id: 'tokobaju',
-    title: 'Tokobaju (E-Commerce) - Web App',
+    title: 'Tokobaju - E-Commerce',
     image: tokobaju,
-    linkDemo: 'https://tokobaju-nine.vercel.app',
-    linkGithub: 'https://github.com/faukirijatul/ecommerce-frontend-react',
+    description:
+      'An online clothing store offering a wide selection of trendy fashion, integrated with a payment gateway for fast, secure, and seamless transactions.',
+    linkDemo: '',
+    linkGithub: '',
     mainStack: [
       'JavaScript',
       'React',
@@ -90,12 +118,12 @@ export const projects: ProjectItem[] = [
   },
   {
     _id: 'fauki-blog',
-    title: 'Fauki - Blog Web App',
+    title: 'Personal Blog',
     description:
-      'This fullstack blogging application allows users to create rich text posts, like, comment, and save/bookmark blogs. Built with React.js, Vite, and TypeScript on the frontend, and Express.js with MongoDB on the backend. Styled with Tailwind CSS for a responsive UI.',
+      'A full-stack personal blog designed to publish articles, showcase portfolios, and manage content seamlessly with a custom back-end and dynamic UI.',
     image: faukiblog,
-    linkDemo: 'https://blog.fauki.com',
-    linkGithub: 'https://github.com/faukirijatul/blog-mern-ts.git',
+    linkDemo: '',
+    linkGithub: '',
     mainStack: [
       'TypeScript',
       'React',
@@ -112,38 +140,6 @@ export const projects: ProjectItem[] = [
       'Redux Toolkit',
       'Express JS',
       'Node JS',
-      'Cloudinary',
-      'OAuth',
-      'MongoDB',
-      'Json Web Token',
-    ],
-  },
-  {
-    _id: 'apakabar',
-    title: 'Apakabar - Chat Web App',
-    description:
-      'This fullstack chat application enables real-time communication between users. It supports features like private messaging and online status indicators. The frontend is built with React.js and Vite, while the backend leverages Express.js and Socket.io for real-time interactions. MongoDB is used for data storage, and the UI is styled with Tailwind CSS and DaisyUI.',
-    image: apaKabar,
-    linkDemo: 'https://apakabar-chatapp-web.onrender.com',
-    linkGithub: 'https://github.com/faukiofficial/apakabar-chatapp-web.git',
-    mainStack: [
-      'React',
-      'Zustand',
-      'Tailwind CSS',
-      'Daisy UI',
-      'Express JS',
-      'Socket.io',
-      'MongoDB',
-    ],
-    tool: [
-      'JavaScript',
-      'React',
-      'Tailwind CSS',
-      'Daisy UI',
-      'Zustand',
-      'Express JS',
-      'Node JS',
-      'Socket.io',
       'Cloudinary',
       'OAuth',
       'MongoDB',
@@ -152,12 +148,12 @@ export const projects: ProjectItem[] = [
   },
   {
     _id: 'toko-kita',
-    title: 'Toko Kita - ECommerce Web App',
+    title: 'Toko Kita - E-Commerce',
     description:
-      'This fullstack e-commerce application supports two roles: users and admins. Users can browse, shop, and make payments, while admins can manage products and handle shipment processing. The frontend is built with React.js and Vite, while the backend is powered by Express.js and MongoDB. Styling is handled using Tailwind CSS.',
+      'A general online store offering a wide selection of products, featuring real-time order tracking for convenient shipment monitoring.',
     image: tokoKita,
-    linkDemo: 'https://tokokita.onrender.com',
-    linkGithub: 'https://github.com/faukiofficial/Tokokita.git',
+    linkDemo: '',
+    linkGithub: '',
     mainStack: [
       'React',
       'Redux Toolkit',
@@ -174,136 +170,6 @@ export const projects: ProjectItem[] = [
       'Node JS',
       'Cloudinary',
       'MongoDB',
-      'Json Web Token',
-    ],
-  },
-  {
-    _id: 'admin-dashboard',
-    title: 'Admin Dashboard - Web App',
-    description:
-      'The backend is built using Express.js. Additional features include email functionality for OTP registration, forget password, change email, and change password, powered by Nodemailer. The frontend is developed using React.js. It includes state management with @reduxjs/toolkit. Styling is handled using Tailwind CSS, ensuring a responsive and modern user interface.',
-    image: adminDashboard,
-    linkDemo: 'https://adminedu.onrender.com',
-    linkGithub: 'https://github.com/faukiofficial/admindashboard.git',
-    mainStack: [
-      'React',
-      'Redux Toolkit',
-      'Tailwind CSS',
-      'Express JS',
-      'MongoDB',
-    ],
-    tool: [
-      'JavaScript',
-      'React',
-      'Tailwind CSS',
-      'Express JS',
-      'Node JS',
-      'MongoDB',
-      'Redux Toolkit',
-      'Nodemailer',
-      'Json Web Token',
-    ],
-  },
-  {
-    _id: 'jago-catat',
-    title: 'Jago Catat - Note Taking App',
-    description:
-      'This application is a fullstack platform for note-taking, allowing users to create, edit, and delete notes. Built with React.js and Vite for the frontend, and Express.js and MongoDB for the backend. Utilizes Tailwind CSS for a responsive and modern design.',
-    image: jagoCatat,
-    linkDemo: 'https://jagocatat.onrender.com',
-    linkGithub: 'https://github.com/faukiofficial/JagoCatat.git',
-    mainStack: ['React', 'Tailwind CSS', 'Express JS', 'MongoDB'],
-    tool: [
-      'JavaScript',
-      'React',
-      'Tailwind CSS',
-      'Express JS',
-      'Node JS',
-      'MongoDB',
-      'Json Web Token',
-    ],
-  },
-  {
-    _id: 'learny',
-    title: 'Learny - LMS Web App (Frontend)',
-    image: learny,
-    linkDemo: '',
-    linkGithub: 'https://github.com/faukiofficial/lms2.git',
-    mainStack: ['React', 'TypeScript', 'Tailwind CSS', 'Context API'],
-    tool: ['React', 'TypeScript', 'Tailwind CSS', 'Context API', 'Clerk'],
-  },
-  {
-    _id: 'blog-backend',
-    title: 'Blog Backend',
-    image: blogBackendRedis,
-    linkDemo: '',
-    linkGithub: 'https://github.com/faukiofficial/blog-mern-ts.git',
-    mainStack: ['TypeScript', 'Express JS', 'Node JS', 'MongoDB', 'Redis'],
-    tool: [
-      'HTML',
-      'CSS',
-      'TypeScript',
-      'Express JS',
-      'Node JS',
-      'Cloudinary',
-      'MongoDB',
-      'Redis',
-      'Nodemailer',
-      'EJS',
-      'Json Web Token',
-    ],
-  },
-  {
-    _id: 'belaja',
-    title: 'Belaja - LMS Web App',
-    image: belaja,
-    linkDemo: '',
-    linkGithub: 'https://github.com/faukiofficial/Belaja.git',
-    mainStack: [
-      'TypeScript',
-      'React',
-      'Tailwind CSS',
-      'Redux Toolkit',
-      'Midtrans',
-      'Express JS',
-      'MongoDB',
-      'Redis',
-    ],
-    tool: [
-      'HTML',
-      'CSS',
-      'TypeScript',
-      'React',
-      'Tailwind CSS',
-      'Redux Toolkit',
-      'Express JS',
-      'Node JS',
-      'Cloudinary',
-      'Midtrans',
-      'MongoDB',
-      'Redis',
-      'Nodemailer',
-      'Json Web Token',
-    ],
-  },
-  {
-    _id: 'event-ticket-booking',
-    title: 'Event Ticket Booking (Backend)',
-    description:
-      'The backend is built with Express.js, the database is managed using the Mongoose, and authentication is implemented with JsonWebToken. It includes mailing features for OTP registration and order notifications using Nodemailer and Mustache.',
-    image: eventBookingBE,
-    linkDemo: '',
-    linkGithub:
-      'https://github.com/faukiofficial/event-ticket-booking-backend.git',
-    mainStack: ['Express JS', 'Node JS', 'MongoDB', 'Nodemailer'],
-    tool: [
-      'HTML',
-      'CSS',
-      'JavaScript',
-      'Express JS',
-      'Node JS',
-      'MongoDB',
-      'Nodemailer',
       'Json Web Token',
     ],
   },
