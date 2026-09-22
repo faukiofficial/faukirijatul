@@ -1,4 +1,5 @@
 import legalize from '@/assets/projects/legalize.webp';
+import erm from '@/assets/projects/erm.webp';
 import hikasir from '@/assets/projects/hikasir.webp';
 import docduit from '@/assets/projects/docduit.webp';
 import kodingup from '@/assets/projects/kodingup.webp';
@@ -29,6 +30,24 @@ export const projects: ProjectItem[] = [
     ],
   },
   {
+    _id: 'erm',
+    title: 'Enterprise Risk Management System',
+    image: erm,
+    description:
+      'An Enterprise Risk Management (ERM) web application to identify, evaluate, and mitigate organizational risks through comprehensive modules for process tracking, control mapping, cause-and-consequence analysis, risk assessment, event monitoring, and automated action planning.',
+    linkDemo: '',
+    linkGithub: '',
+    mainStack: ['TypeScript', 'Next JS', 'Zustand', 'Radix UI', 'SWR'],
+    tool: [
+      'TypeScript',
+      'Next JS',
+      'Zustand',
+      'Radix UI',
+      'Tailwind CSS',
+      'SWR',
+    ],
+  },
+  {
     _id: 'hi-kasir',
     title: 'Hi-Kasir',
     image: hikasir,
@@ -41,7 +60,7 @@ export const projects: ProjectItem[] = [
   },
   {
     _id: 'docduit',
-    title: 'Docduit - Web App',
+    title: 'Docduit',
     image: docduit,
     description: 'A financial consultation web application integrated with AI',
     linkDemo: '',
