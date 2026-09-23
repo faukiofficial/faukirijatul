@@ -2,7 +2,7 @@ import legalize from '@/assets/projects/legalize.webp';
 import erm from '@/assets/projects/erm.webp';
 import hikasir from '@/assets/projects/hikasir.webp';
 import docduit from '@/assets/projects/docduit.webp';
-import kodingup from '@/assets/projects/kodingup.webp';
+// import kodingup from '@/assets/projects/kodingup.webp';
 import tokobaju from '@/assets/projects/tokobaju.webp';
 import faukiblog from '@/assets/projects/faukiblog.webp';
 import tokoKita from '@/assets/projects/tokokita.webp';
@@ -83,23 +83,23 @@ export const projects: ProjectItem[] = [
       'Context API',
     ],
   },
-  {
-    _id: 'kodingup',
-    title: 'Koding Up - CMS',
-    image: kodingup,
-    description:
-      'A web-based Content Management System for Learning Management Systems to manage digital learning, including live class scheduling, assignments, automated attendance, and course materials efficiently.',
-    linkDemo: '',
-    linkGithub: '',
-    mainStack: [
-      'TypeScript',
-      'React JS',
-      'Radix UI',
-      'Tailwind CSS',
-      'React Query',
-    ],
-    tool: ['TypeScript', 'Next JS', 'Radix UI', 'Tailwind CSS', 'React Query'],
-  },
+  // {
+  //   _id: 'kodingup',
+  //   title: 'Koding Up - CMS',
+  //   image: kodingup,
+  //   description:
+  //     'A web-based Content Management System for Learning Management Systems to manage digital learning, including live class scheduling, assignments, automated attendance, and course materials efficiently.',
+  //   linkDemo: '',
+  //   linkGithub: '',
+  //   mainStack: [
+  //     'TypeScript',
+  //     'React JS',
+  //     'Radix UI',
+  //     'Tailwind CSS',
+  //     'React Query',
+  //   ],
+  //   tool: ['TypeScript', 'Next JS', 'Radix UI', 'Tailwind CSS', 'React Query'],
+  // },
   {
     _id: 'tokobaju',
     title: 'Tokobaju - E-Commerce',
