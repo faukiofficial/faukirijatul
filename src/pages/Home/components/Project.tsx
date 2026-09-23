@@ -9,7 +9,7 @@ export function Project() {
   return (
     <section id="project" className="bg-gray-300 py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h3 className="mb-2 text-center text-4xl font-semibold uppercase text-gray-900">
+        <h3 className="mb-8 text-center text-2xl font-semibold uppercase text-gray-900 sm:text-3xl md:text-4xl">
           Projects ({projects.length})
         </h3>
 
