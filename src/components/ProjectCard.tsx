@@ -11,12 +11,13 @@ export function ProjectCard({ project }: ProjectCardProps) {
       to={`/project/${project._id}`}
       className="h-full w-full rounded-md border bg-white transition duration-500 ease-in-out hover:scale-105 hover:shadow-xl hover:shadow-gray-500"
     >
-      <img
-        src={project.image}
-        alt={project.title}
-        className="w-full rounded-t-md border-b object-cover"
-        loading="lazy"
-      />
+      <div className="aspect-[16/9] w-full rounded-t-md border bg-transparent">
+        <img
+          src={project.image}
+          alt={project.title}
+          className="w-full rounded-t-md border-b object-cover"
+        />
+      </div>
       <div className="p-3">
         <h4 className="text-lg font-semibold">{project.title}</h4>
 

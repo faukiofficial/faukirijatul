@@ -20,11 +20,11 @@ export function About() {
       className="relative bg-gray-200 py-16 text-lg text-white"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h3 className="mb-8 text-center text-4xl font-semibold uppercase text-gray-900">
+        <h3 className="mb-8 text-center text-2xl font-semibold uppercase text-gray-900 sm:text-3xl md:text-4xl">
           About
         </h3>
 
-        <p className="text-center text-lg text-gray-900 sm:text-2xl">
+        <p className="text-center text-base text-gray-900 sm:text-xl md:text-2xl">
           Developed scalable, high-performance web applications as a Full-Stack
           Developer for over 2 years, specializing in React.js and Next.js for
           dynamic frontends and seamless user experiences. Built robust backend
@@ -35,7 +35,7 @@ export function About() {
           supported business growth.
         </p>
 
-        <h4 className="mb-5 mt-8 text-center text-3xl font-semibold uppercase text-gray-900">
+        <h4 className="mb-5 mt-8 text-center text-xl font-semibold uppercase text-gray-900 sm:text-2xl md:text-3xl">
           Programming Languages, Frameworks & Tools
         </h4>
 
@@ -45,7 +45,7 @@ export function About() {
               key={category.title}
               className="flex flex-col items-center rounded-md border border-gray-400/40 p-4"
             >
-              <h3 className="mb-2 text-xl font-semibold text-gray-900">
+              <h3 className="mb-2 text-lg font-semibold text-gray-900 sm:text-xl">
                 {category.title}
               </h3>
 
@@ -72,7 +72,7 @@ export function About() {
                         width={STACK_ICON_SIZE}
                         loading="lazy"
                       />
-                      <p className="text-center text-sm text-gray-900 sm:text-base">
+                      <p className="text-center text-xs text-gray-900 sm:text-base">
                         {stack.title}
                       </p>
                     </button>
