@@ -19,7 +19,7 @@ export const SOCIAL_LINKS = [
   },
   {
     label: 'WhatsApp',
-    href: 'https://wa.me/6283805227327',
+    href: 'https://wa.me/6281818913201',
     icon: FaWhatsapp,
   },
 ] as const;
